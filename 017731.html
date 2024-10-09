@@ -614,12 +614,19 @@ delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypt
 </td>
 </tr>
 <tr>
-<td class="fz-17" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 1.5em; mso-line-height: exactly; text-align:left; font-weight:normal; padding-top: 0px; padding-bottom: 20px;">
+<td class="fz-17" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 1.5em; mso-line-height: exactly; text-align:left; font-weight:normal; padding-top: 0px; padding-bottom: 30px;">
 We can’t wait connect with you all! 
 </td>
 </tr>
+<!--			CTA		-->
 <tr>
-<td class="fz-17" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 1.5em; mso-line-height: exactly; text-align:left; font-weight:normal; padding-top: 0px; padding-bottom: 20px; font-style: italic;">
+<td  align="left" style="padding: 0px 0px 0px 0px;" valign="top" class=""><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;">
+<th bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> <a _label="MAIN_CTA" href="https://www.facebook.com/sagaholidays/?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD1|CTA" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 40px 12px 40px; text-decoration: none;  color: #fffffe; font-weight:bold;">Click here to follow</a></th>
+</table></td>
+</tr>
+<!--			CTA		-->
+<tr>
+<td class="fz-17" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 1.5em; mso-line-height: exactly; text-align:left; font-weight:normal; padding-top: 30px; padding-bottom: 20px; font-style: italic;">
 If you are a cruise fan, too, head over to the <a class="fz-17" href="
 https://www.facebook.com/sagacruisesUK/?pid=<%=
 delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.5em; font-style: italic;" _label="TXT_SAGA_CRUISES">Saga Cruises</a> page for all cruise-inspired content. 
