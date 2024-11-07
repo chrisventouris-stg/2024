@@ -499,47 +499,31 @@ View and manage your booking online in our newly improved portal
 <!--  Pre-header  --> 
 
 
-
-<!-- EIE Header section -->
-<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<!--NAV_LOGO-->
+<table class="fullWidth" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#FFFFFF" >
+<!--  SPACER  -->
 <tr>
-<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;">
-<tr>
-<td align="center"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center">
-<tr>
-<td bgcolor="#EAF6F6"><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
-<tr style="display:table; width:100%!important;">
-<th class="hide-sm" align="center" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
-<th class="col pl-sm-20" align="center" width="140" style="font-size:1px; line-height: 1px; vertical-align:top;"><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
-<tr>
-<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:22px">&nbsp;</td>
+<td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:6px;">&nbsp;</td>
 </tr>
+<!--  SPACER  -->
 <tr>
-<td><a href="https://holiday.saga.co.uk?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|header_logo|image" target="_blank"><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Saga_Top_01.png" alt="Saga" width="140" height="auto" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a></td>
-</tr>
+<td><table width="100%" height="auto" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
-<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:22px">&nbsp;</td>
-</tr>
-</table></th>
-<th class="hide-sm" align="center" width="208" style="font-size:1px; line-height: 1px;">&nbsp;</th>
-<th class="hide-sm" align="center" width="260" style="ont-size:1px; line-height: 1px; mso-line-height-rule: exactly;"><table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; ">
-<tr>
-<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:18px">&nbsp;</td>
-</tr>
-<tr>
-<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:62px">&nbsp;</td>
-</tr>
-</table></th>
-<th class="hide-sm" align="center"  width="22" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<td width="100%" bgcolor="#FFFFFF" align="center">
+<a href="https://travel.saga.co.uk?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|header_logo|image" target="_blank" _label="NAV_SAGA">
+<img class="logo" src="https://www.saga.co.uk/emails/2021/EIE_2021/Saga_Top_01.png" alt="SAGA" width="160" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align: right;" >
+</a>
+</td>
 </tr>
 </table></td>
 </tr>
-</table></td>
+<!--  SPACER  -->
+<tr>
+<td class="pt-sm-20" style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
 </tr>
-</table></td>
-</tr>
+<!--  SPACER  -->
 </table>
-<!-- EIE Header section --> 
+<!--NAV_LOGO-->
 
 <!-- INTRO V2 -->
 <table class="innerBlockFullWidth" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;" bgcolor="#FFFFFF">
@@ -553,10 +537,18 @@ View and manage your booking online in our newly improved portal
 <td width="100%"><table  cellpadding="0" cellspacing="0" role="presentation" align="center">
 <!--  SPACER  -->
 <tr>
-<td class="pt-sm-10" style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+<td class="pt-sm-10" style="line-height:1px; font-size:1px; padding-top:10px;">&nbsp;</td>
 </tr>
 <!--  SPACER  --> 
+<!-- BOOKING REF -->
+<tr>
+<td class="pl-sm-10 pr-sm-10" align="left" style="font-family:'Ambit', arial, sans-serif; font-size:12px; line-height:1.5em;  font-weight:500; text-align: left; color: #1e3282;" >
+Booking reference: <% if (targetData.booking_ref != ""){%><%= targetData.booking_ref %><%} else {%><%} %>
 
+<hr style="background-color: #F5F5F5;">
+</td>
+</tr>
+<!-- BOOKING REF --> 
 <!-- TITLE END --> 
 <!--SPACER-->
 <tr>
@@ -564,7 +556,7 @@ View and manage your booking online in our newly improved portal
 </tr>
 <!--SPACER-->
 <tr>
-<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">Dear
+<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-top: 20px;">Dear
 <% if (message.segmentCode.indexOf('_EmailOnly') != -1) { %>
 <%@ include view='TravelTailorMadePersonalisation' %>
 <% } else { %>
@@ -579,17 +571,17 @@ I am aware that if you have tried to call us since Monday you will likely have e
 
 <tr>
 <td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
-I am pleased to confirm that the issue, which was the result of a system update that was out of our control, has now been fully resolved and our travel advisors are on hand to help with your queries. We are currently prioritising calling back those customers who contacted us during the outage and were unable to get through. Therefore, please bear with us if the call wait time is a little longer than usual. We aim to be back to normal operations in the next two&nbsp;days.
+I am pleased to confirm that the issue has now been fully resolved and our travel advisors are on hand to help with your queries. We are currently prioritising calling back those customers who contacted us during the outage and were unable to get through. Therefore, please bear with us if the call wait time is a little longer than usual. We aim to be back to normal operations in the next two&nbsp;days.
 </td>
 </tr>
 
 <tr>
 <td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
-If you have an urgent enquiry, please contact us on 0800&nbsp;988&nbsp;5886 or at r&zwj;e&zwj;s&zwj;e&zwj;r&zwj;v&zwj;a&zwj;t&zwj;i&zwj;o&zwj;n&zwj;s&zwj;@&zwj;s&zwj;a&zwj;g&zwj;a.c&zwj;o.u&zwj;k where we will be able to provide the support you&nbsp;need.
+If you have an urgent enquiry about your upcoming holiday, please contact us on 0800&nbsp;988&nbsp;5886 or at r&zwj;e&zwj;s&zwj;e&zwj;r&zwj;v&zwj;a&zwj;t&zwj;i&zwj;o&zwj;n&zwj;s&zwj;@&zwj;s&zwj;a&zwj;g&zwj;a.c&zwj;o.u&zwj;k where we will be able to provide the support you&nbsp;need.
 </td>
 </tr>
 <tr>
-<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
+<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:16px; ">
 Many thanks for your understanding.
 </td>
 </tr><tr>
