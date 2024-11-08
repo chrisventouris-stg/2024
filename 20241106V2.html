@@ -463,7 +463,7 @@ line-height: 30px !important;
 <body style="box-sizing:border-box;margin:0;padding:0;width:100%;word-break:break-word;-webkit-font-smoothing:antialiased;">
 <!--[if !mso]><!-->
 <div style="display:none; font-size:0; line-height:0; overflow:hidden; mso-hide:all; max-height: 0px; ">
-View and manage your booking online in our newly improved portal
+
 </div>
 <!--<![endif]-->
 <table cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -500,7 +500,7 @@ View and manage your booking online in our newly improved portal
 
 
 <!--NAV_LOGO-->
-<table class="fullWidth" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#FFFFFF" >
+<table class="fullWidth" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation"  >
 <!--  SPACER  -->
 <tr>
 <td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:6px;">&nbsp;</td>
@@ -509,7 +509,7 @@ View and manage your booking online in our newly improved portal
 <tr>
 <td><table width="100%" height="auto" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
-<td width="100%" bgcolor="#FFFFFF" align="center">
+<td width="100%"  align="center">
 <a href="https://travel.saga.co.uk?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|header_logo|image" target="_blank" _label="NAV_SAGA">
 <img class="logo" src="https://www.saga.co.uk/emails/2021/EIE_2021/Saga_Top_01.png" alt="SAGA" width="160" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align: right;" >
 </a>
@@ -526,11 +526,11 @@ View and manage your booking online in our newly improved portal
 <!--NAV_LOGO-->
 
 <!-- INTRO V2 -->
-<table class="innerBlockFullWidth" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;" bgcolor="#FFFFFF">
+<table class="innerBlockFullWidth" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;" >
 <tr>
 <td  align="center"><table cellpadding="0" cellspacing="0" role="presentation" bgcolor="" width="100%" style="border-collapse: collapse;">
 <tr>
-<td align="center" bgcolor="#FFFFFF"><table align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<td align="center" ><table align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
 <th align="center" width="100%"  style="font-size:1px; line-height: 1px; vertical-align:middle;"><table class="innerBlockFullWidthTR" cellpadding="0" cellspacing="0" role="presentation" width="86%" style="border-collapse: collapse;">
 <tr>
@@ -541,13 +541,7 @@ View and manage your booking online in our newly improved portal
 </tr>
 <!--  SPACER  --> 
 <!-- BOOKING REF -->
-<tr>
-<td class="pl-sm-10 pr-sm-10" align="left" style="font-family:'Ambit', arial, sans-serif; font-size:12px; line-height:1.5em;  font-weight:500; text-align: left; color: #1e3282;" >
-Booking reference: <% if (targetData.booking_ref != ""){%><%= targetData.booking_ref %><%} else {%><%} %>
 
-<hr style="background-color: #F5F5F5;">
-</td>
-</tr>
 <!-- BOOKING REF --> 
 <!-- TITLE END --> 
 <!--SPACER-->
@@ -556,7 +550,7 @@ Booking reference: <% if (targetData.booking_ref != ""){%><%= targetData.booking
 </tr>
 <!--SPACER-->
 <tr>
-<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-top: 20px;">Dear
+<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-top: 10px;">Dear
 <% if (message.segmentCode.indexOf('_EmailOnly') != -1) { %>
 <%@ include view='TravelTailorMadePersonalisation' %>
 <% } else { %>
@@ -577,7 +571,7 @@ I am pleased to confirm that the issue has now been fully resolved and our trave
 
 <tr>
 <td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
-If you have an urgent enquiry about your upcoming holiday, please contact us on 0800&nbsp;988&nbsp;5886 or at r&zwj;e&zwj;s&zwj;e&zwj;r&zwj;v&zwj;a&zwj;t&zwj;i&zwj;o&zwj;n&zwj;s&zwj;@&zwj;s&zwj;a&zwj;g&zwj;a.c&zwj;o.u&zwj;k where we will be able to provide the support you&nbsp;need.
+If you have an urgent enquiry about your upcoming holiday, please contact us on 0&zwj;8&zwj;0&zwj;0 9&zwj;8&zwj;8 5&zwj;8&zwj;8&zwj;6 or at r&zwj;e&zwj;s&zwj;e&zwj;r&zwj;v&zwj;a&zwj;t&zwj;i&zwj;o&zwj;n&zwj;s&zwj;@&zwj;s&zwj;a&zwj;g&zwj;a.c&zwj;o.u&zwj;k where we will be able to provide the support you&nbsp;need.
 </td>
 </tr>
 <tr>
