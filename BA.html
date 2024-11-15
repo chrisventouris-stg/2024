@@ -607,18 +607,24 @@ Ideas & inspiration for your next holiday.
 </tr>
 <!--  SPACER  --> 
 <tr>
-<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:30px; ">
-<% if (targetData.spins == "Y"){%> 
-Or explore the incredible botanical gardens of Madeira, with an expert guide in tow? We think the best way to cure the holiday blues is to get another trip in the diary, so to get you in the mood, we’ve put together a short video showcasing some of our favourite special interest holidays, from walking to birdwatching. To browse our complete collection, visit our <a class="fz-17" href="https://holiday.saga.co.uk/holidays/holiday-types/special-interest?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_website">website</a>.
+<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
+<% if (targetData.productGroup1 == "group tours"){%> 
+You’re just a few steps away from completing your booking for <%= targetData.tr_productname %> and making your dream tour a reality.
 <%} else {%> 
-Or discovering the delights of Madeira, with its botanical gardens and lush levadas? We think the best way to cure the holiday blues is to get another trip in the diary, so to get you in the mood, we’ve put together a short video showcasing some of our favourite hotels. To browse our complete collection, visit our <a class="fz-17" href="https://holiday.saga.co.uk/holidays/holiday-types/hotel/saga-hosted-hotels?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_website">website</a>.                                 
+You’re just a few steps away from completing your booking for <%= targetData.tr_productname %> and making your dream holiday a reality.                                
 <%} %>                            
 </td> 
 </tr>
-
+<!-- CTA -->
+<tr>
+<td  align="center" style="padding: 0px 0px 0px 0px;" valign="top" class=""><table align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;">
+<th bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> <a href="<%= targetData.currentPageURL %>?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|CTA" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt;  padding: 12px 40px 12px 40px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="HERO_CTA">Finish my booking</a></th>
+</table></td>
+</tr>
+<!-- CTA --> 
 <!--  SPACER  -->
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:0px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:10px;">&nbsp;</td>
 </tr>
 <!--  SPACER  -->
 </table></td>
@@ -628,46 +634,12 @@ Or discovering the delights of Madeira, with its botanical gardens and lush leva
 </table></td>
 </tr>
 <tr>
-<td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:10px;">&nbsp;</td>
+<td class="" style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
 </tr>
 </table></td>
 </tr>
 </table>
 <!-- INTRO V2 -->
-
-
-<!-- VIDEO -->
-<table class="fullWidth" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;">
-    <tr>
-    <td  align="center"><table cellpadding="0" cellspacing="0" role="presentation" bgcolor="" width="100%" style="border-collapse: collapse;">
-    <tr>
-    <td  align="center"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
-    <tr>
-    <th align="center" style="font-size:1px; line-height: 1px; vertical-align:top;"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
-    <tr>
-    <td class="innerBlockFullWidth" align="center">
-    <% if (targetData.spins == "Y") {%>
-    <a href="https://www.youtube.com/watch?v=2707lwI8YUY?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|VIDEO_SPINS" target="_blank" _label="VIDEO_SPINS"> 
-    <img class="showcase-mobile" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/37ea04167cd87f0037d78ede37d6755115624515536ab210954fb5d8039d6c83.gif" alt="" width="530" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a>
-    
-    <%} else {%>
-    <a href="https://www.youtube.com/watch?v=R8V7qxNTrw8?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|VIDEO_LH" target="_blank" _label="VIDEO_HH">
-    <img class="showcase-mobile" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/e1c7f5e29c8827f03132e3101209d225445091281de95faae8764ef1e34764e5.gif" alt="" width="530" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a>
-    
-    <%}  %>                      
-    </td>
-    </tr>
-    </table></th>
-    </tr>
-    </table></td>
-    </tr>
-    </table></td>
-    </tr>
-    <tr>
-    <td style="line-height:1px; font-size:1px; padding-top:50px;">&nbsp;</td>
-    </tr>
-    </table>
-    <!-- VIDEO --> 
 
 
 <!-- BANNER -->
