@@ -609,9 +609,9 @@ Ideas & inspiration for your next holiday.
 <tr>
 <td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
 <% if (targetData.productGroup1 == "group tours"){%> 
-You’re just a few steps away from completing your booking for <%= targetData.tr_productname %> and making your dream tour a reality.
+You’re just a few steps away from completing your booking for <a class="fz-17" href="<%= targetData.currentPageURL %>" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INSTAGRAM"><%= targetData.tr_productname %></a> and making your dream tour a reality.
 <%} else {%> 
-You’re just a few steps away from completing your booking for <%= targetData.tr_productname %> and making your dream holiday a reality.                                
+You’re just a few steps away from completing your booking for <a class="fz-17" href="<%= targetData.currentPageURL %>?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|INSTAGRAM" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INSTAGRAM"><%= targetData.tr_productname %></a> and making your dream holiday a reality.                                
 <%} %>                            
 </td> 
 </tr>
@@ -641,7 +641,291 @@ You’re just a few steps away from completing your booking for <%= targetData.t
 </table>
 <!-- INTRO V2 -->
 
+<!-- BNR BLOCK -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="innerBlockFullWidth" dir="rtl">
+    <tr>
+    <td>
+    <table bgcolor="#EAF6F6" role="presentation" width="520" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth" style="border-radius: 10px;">
+    <tr>
+    
+    <!-- IMAGE -->
+    <td class="displayBlock fullWidth" dir="ltr" width="260" style="width: 260;">
+    <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth">
+    <tr>
+    <!--[if !mso]><!-->
+    <td>
+    <!-- Desktop Image -->
+    <a href="https://holiday.saga.co.uk/blog/ultimate-travel-checklist?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|CX_BNR" target="_blank" _label="CX_BNR">
+    <img class="desktop-image" align="center" width="260" height="260" src="<%= targetData.image_URL %>" alt="Your holiday image" border="0" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; display: block;">
+    </a>
+    <!-- Mobile Image -->
+    <a href="https://holiday.saga.co.uk/blog/ultimate-travel-checklist?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|CX_BNR" target="_blank" _label="CX_BNR">
+    <img class="mobile-image" align="center" width="100%" height="100%"  src="<%= targetData.image_URL %>" alt="Your holiday image" border="0" style="border-top-left-radius: 10px; border-top-right-radius: 10px; display: none;">
+    </a>
+    </td>
+    <!--<![endif]-->
+    <!--[if mso]>
+    <td>
+    <a href="https://holiday.saga.co.uk/blog/ultimate-travel-checklist?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|CX_BNR" target="_blank" _label="CX_BNR">
+    <img class="bnr-image" align="center" width="260" height="260" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/644a01bf5c22c8a20c683c8de133d2a81fa297c54725d36e21d53030582300ed.jpg" alt="" border="0" class="fullWidth heightAuto" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+    </a>
+    </td>
+    <![endif]-->
+    </tr>
+    </table>
+    </td>
+    
+    <!-- SPACER -->
+    <td class="displayBlock fullWidth" width="12" dir="ltr">&nbsp;</td>
+    
+    <!-- CONTENT -->
+    <td class="displayBlock fullWidth" dir="ltr" width="248" style="width: 248;">
+    <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth">
+    <tr>
+    <td class="pr-sm-20 pl-sm-20" align="center" style="padding-right: 15px; padding-left: 20px; padding-bottom: 20px; font-family: 'Ambit', arial, sans-serif; font-size:17px; line-height:1.1em; text-align:left; font-weight:400; color:#1e3282;">
+    <%= targetData.description %>
+    </td>
+    </tr>
+    
+    <!-- CTA 2-->
+    <tr>
+    <td>
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-collapse: collapse;">
+    <tr>
+    <td class="pr-sm-20 pl-sm-20 pb-sm-30" align="center" style="border-radius: 10px;">
+    <table class="fullWidth" width="212" bgcolor="#1e3282" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-collapse: collapse; border-radius: 6px;">
+    <tr>
+    <td align="center" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 18px; mso-line-height: exactly; padding: 12px 20px 12px 20px; text-decoration: none;  color: #fffffe; font-weight:bold;">
+    <a _label="HOLIDAY_CHECKLIST" href="https://holiday.saga.co.uk/blog/ultimate-travel-checklist?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|MANAGE_MY_BOOKING" target="_blank" style="text-decoration: none; color: #fffffe; font-weight:bold;" >Finish my booking</a>
+    </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    <!-- CTA -->
+    </table>
+    </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+    <!-- BNR BLOCK -->	
 
+	
+<!-- TRUSTPILOT V2 -->
+<% if (targetData.productGroup1 == "group tours") {%>
+<table align="center" class="innerBlockFullWidth" cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;">
+<!-- BLOCK SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+<!-- BLOCK SPACER -->
+<tr>
+<td>
+<table class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" width="520" align="center" style="border-collapse: collapse;">
+<tr>
+<td bgcolor="#EAF6F6" style="border-radius: 10px;">
+<table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<!-- INSIDE SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+<!-- INSIDE SPACER -->
+<!-- TITLE -->
+<!--[if mso]>
+<tr>
+<td align="left" valign="top"><table role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" class="innerBlockFullWidth pl-sm-20 pr-sm-0" style="padding-left: 10px; padding-right: 20px;">
+<tr>
+<td></td>
+<td class="tp_out" width="10" height="10" bgcolor="#FA8F3A" >&zwj;</td>
+<td class="pr-sm-10 fz-26" align="center" style="padding-left: 15px; font-family: 'Ambit', arial, sans-serif; font-size:30px; line-height:1.1em;  text-align:left; font-weight:900; color:#1e3282;">WHAT RETURNING TRAVELLERS HAVE BEEN SAYING&hellip;</td>
+</tr>
+</table></td>
+</tr>
+<![endif]-->
+<!--[if !mso]><!-->
+<tr>
+<td align="left" valign="top"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="innerBlockFullWidth pl-sm-20 pr-sm-0" style="padding-left: 20px; padding-right: 20px;">
+<tr>
+<td></td>
+<td  width="30" height="30" bgcolor="#FA8F3A" style="border-radius: 4px; max-width: 30px !important;">&nbsp;</td>
+<td class="pr-sm-10 fz-26" align="center" style="padding-left: 15px; font-family: 'Ambit', arial, sans-serif; font-size:30px; line-height:1.1em;  text-align:left; font-weight:900; color:#1e3282;">WHAT RETURNING TRAVELLERS HAVE BEEN SAYING&hellip;</td>
+</tr>
+</table></td>
+</tr>
+<!--<![endif]-->
+<!-- TITLE -->
+<!-- INSIDE SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+<!-- INSIDE SPACER -->
+<!-- TESTIMONIALS -->
+<tr>
+<td>
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td class="fz-17" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:4px; padding-left: 20px; padding-right: 20px;">
+“Well organised from beginning to end. Great tour manager, lovely tour group, wonderful places to stay and&nbsp;visit.”
+</td>
+</tr>
+<tr> 
+<td align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-left: 20px; padding-right: 20px;">
+<strong>Louise, travelled to Costa Rica</strong> 
+</td>
+</tr>
+<tr>
+<td class="fz-17" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:4px; padding-left: 20px; padding-right: 20px;">
+“Fantastic scenery, beautiful glaciers, and lots of wildlife and whales spotted. We had an amazing tour manager - very knowledgeable of the surrounding areas and the wildlife, always very helpful and organised everything to perfection. 10/10.”
+</td>
+</tr>
+<tr> 
+<td align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-left: 20px; padding-right: 20px;">
+<strong>Wally, travelled to Canada & Alaska  </strong> 
+</td>
+</tr>
+<tr>
+<td class="fz-17" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:4px; padding-left: 20px; padding-right: 20px;">
+“Our tour manager was possibly the best we have ever had: professional, personable, very knowledgeable, attentive, kind and caring. He was not only a brilliant organiser, but an expert naturalist too. Perfect for this&nbsp;holiday.”                                            
+</td>
+</tr>
+<tr> 
+<td align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-left: 20px; padding-right: 20px;">
+<strong>Anon, travelled to India</strong> 
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- TESTIMONIALS -->
+<!-- INSIDE SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<!-- INSIDE SPACER -->
+</table>
+</td>
+</tr>                    
+</table>
+</td>
+</tr>
+<!-- BLOCK SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+<!-- BLOCK SPACER -->
+</table>
+<!-- TRUSTPILOT V2 -->	
+<%} else {%>
+<!-- TRUSTPILOT V2 -->
+<!-- MANAGE BOOKING V2 -->
+<table align="center" class="innerBlockFullWidth" cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;">
+<!-- BLOCK SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<!-- BLOCK SPACER -->
+<tr>
+<td>
+<table class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" width="520" align="center" style="border-collapse: collapse;">
+<tr>
+<td bgcolor="#EAF6F6" style="border-radius: 10px;">
+<table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<!-- INSIDE SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+<!-- INSIDE SPACER -->
+<!-- TITLE -->
+<!--[if mso]>
+<tr>
+<td align="left" valign="top"><table role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" class="innerBlockFullWidth pl-sm-20 pr-sm-0" style="padding-left: 10px; padding-right: 20px;">
+<tr>
+<td></td>
+<td class="tp_out" width="10" height="10" bgcolor="#FA8F3A" >&zwj;</td>
+<td class="pr-sm-10 fz-26" align="center" style="padding-left: 15px; font-family: 'Ambit', arial, sans-serif; font-size:30px; line-height:1.1em;  text-align:left; font-weight:900; color:#1e3282;">WHAT RETURNING TRAVELLERS HAVE BEEN SAYING&hellip;</td>
+</tr>
+</table></td>
+</tr>
+<![endif]-->
+<!--[if !mso]><!-->
+<tr>
+<td align="left" valign="top"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="innerBlockFullWidth pl-sm-20 pr-sm-0" style="padding-left: 20px; padding-right: 20px;">
+<tr>
+<td></td>
+<td  width="30" height="30" bgcolor="#FA8F3A" style="border-radius: 4px; max-width: 30px !important;">&nbsp;</td>
+<td class="pr-sm-10 fz-26" align="center" style="padding-left: 15px; font-family: 'Ambit', arial, sans-serif; font-size:30px; line-height:1.1em;  text-align:left; font-weight:900; color:#1e3282;">WHAT RETURNING HOLIDAYMAKERS HAVE BEEN SAYING&hellip;</td>
+</tr>
+</table></td>
+</tr>
+<!--<![endif]-->
+<!-- TITLE -->
+<!-- INSIDE SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+<!-- INSIDE SPACER -->
+<!-- TESTIMONIALS -->
+<tr>
+<td style="mso-padding-left-alt:20px;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td class="fz-17" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:4px; padding-left: 20px; padding-right: 20px;">
+“Excellent hotel and a lovely position close to the sea. Service was very good in all departments. Very good quality food with lots of variety.” 
+</td>
+</tr>
+<tr> 
+<td align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-left: 20px; padding-right: 20px;">
+<strong>Patricia, stayed at H10 Estepona Palace </strong> 
+</td>
+</tr>
+<tr>
+<td class="fz-17" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:4px; padding-left: 20px; padding-right: 20px;">
+“Excellent hotel and perfect location to visit Funchal.”
+</td>
+</tr>
+<tr> 
+<td align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-left: 20px; padding-right: 20px;">
+<strong>Colin, stayed at Enotel Lido </strong> 
+</td>
+</tr>
+<tr>
+<td class="fz-17" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:4px; padding-left: 20px; padding-right: 20px;">
+“Everything about the hotel was first class, the room was spotless with a balcony and a sea view [and] the dining room offered a varied menu with excellent service.”                                         
+</td>
+</tr>
+<tr> 
+<td align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; padding-left: 20px; padding-right: 20px;">
+<strong>Keith, stayed at Hotel RH Ifach</strong> 
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- TESTIMONIALS -->
+<!-- INSIDE SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<!-- INSIDE SPACER -->
+</table>
+</td>
+</tr>                    
+</table>
+</td>
+</tr>
+<!-- BLOCK SPACER -->
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+<!-- BLOCK SPACER -->
+</table>
+<!-- TRUSTPILOT V2 -->
+<%}  %>  
 <!-- BANNER -->
 <table class="fullWidth" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;">
 <tr>
