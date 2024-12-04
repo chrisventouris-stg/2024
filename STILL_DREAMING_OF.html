@@ -597,10 +597,14 @@ Ideas & inspiration for your next holiday.
 <tr>
 <td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
 <% if (targetData.productGroup1 == "group tours"){%> 
-You’re just a few steps away from completing your booking for <a class="fz-17" href="<%= targetData.currentPageURL %>" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INSTAGRAM"><%= targetData.tr_productname %></a> and making your dream tour a reality.
+You’re just a few steps away from completing your booking for <a class="fz-17" href="<%= targetData.currentPageURL %>" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INSTAGRAM"><%= targetData.tr_productname %></a> and making your dream tour a&nbsp;reality.
 <%} else {%> 
-You’re just a few steps away from completing your booking for <a class="fz-17" href="<%= targetData.currentPageURL %>?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|INSTAGRAM" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INSTAGRAM"><%= targetData.tr_productname %></a> and making your dream holiday a reality.                                
+You’re just a few steps away from completing your booking for <a class="fz-17" href="<%= targetData.currentPageURL %>?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|INSTAGRAM" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INSTAGRAM"><%= targetData.tr_productname %></a> and making your dream holiday a&nbsp;reality.                                
 <%} %>                            
+</td> 
+</tr><tr>
+<td class="fz-17 pl-sm-10 pr-sm-10" align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom:20px; ">
+Scroll down to have a read through some of our Trustpilot reviews. They’ll give you an idea of the amazing experiences people have been having on our holidays – perfect for getting you excited about your&nbsp;own!                          
 </td> 
 </tr>
 
@@ -634,25 +638,16 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="displayBlock fullWidth" dir="ltr" width="260" style="width: 260;">
     <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth">
     <tr>
-    <!--[if !mso]><!-->
+
     <td>
     <!-- Desktop Image -->
     <a href="https://holiday.saga.co.uk/blog/ultimate-travel-checklist?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|CX_BNR" target="_blank" _label="CX_BNR">
     <img class="desktop-image" align="center" width="260" height="260" src="<%= targetData.image_URL %>" alt="Your holiday image" border="0" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; display: block;">
     </a>
     <!-- Mobile Image -->
-    <a href="https://holiday.saga.co.uk/blog/ultimate-travel-checklist?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|CX_BNR" target="_blank" _label="CX_BNR">
-    <img class="mobile-image" align="center" width="100%" height="100%"  src="<%= targetData.image_URL %>" alt="Your holiday image" border="0" style="border-top-left-radius: 10px; border-top-right-radius: 10px; display: none;">
-    </a>
+
     </td>
-    <!--<![endif]-->
-    <!--[if mso]>
-    <td>
-    <a href="https://holiday.saga.co.uk/blog/ultimate-travel-checklist?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|CX_BNR" target="_blank" _label="CX_BNR">
-    <img class="bnr-image" align="center" width="260" height="260" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/644a01bf5c22c8a20c683c8de133d2a81fa297c54725d36e21d53030582300ed.jpg" alt="" border="0" class="fullWidth heightAuto" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
-    </a>
-    </td>
-    <![endif]-->
+
     </tr>
     </table>
     </td>
@@ -664,7 +659,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="displayBlock fullWidth" dir="ltr" width="248" style="width: 248;">
     <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth">
     <tr>
-    <td class="pr-sm-20 pl-sm-20" align="center" style="padding-right: 15px; padding-left: 20px; padding-bottom: 4px; font-family: 'Ambit', arial, sans-serif; font-size:17px; line-height:1.1em; text-align:left; font-weight:400; color:#1e3282; font-weight: 700;">
+    <td class="pr-sm-20 pl-sm-20" align="center" style="padding-right: 15px; padding-left: 20px; padding-bottom: 4px; font-family: 'Ambit', arial, sans-serif; font-size:17px; line-height:1.2em; text-align:left; font-weight:400; color:#1e3282; font-weight: 700;">
     <%= targetData.tr_productname %>
     </td>
     </tr>
@@ -708,7 +703,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
 <table align="center" class="innerBlockFullWidth" cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;">
 <!-- BLOCK SPACER -->
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
 </tr>
 <!-- BLOCK SPACER -->
 <tr>
@@ -802,7 +797,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
 </tr>
 <!-- BLOCK SPACER -->
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:10px;">&nbsp;</td>
 </tr>
 <!-- BLOCK SPACER -->
 </table>
@@ -907,7 +902,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
 </tr>
 <!-- BLOCK SPACER -->
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:10px;">&nbsp;</td>
 </tr>
 <!-- BLOCK SPACER -->
 </table>
@@ -970,15 +965,23 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;">
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
-        A friendly Saga Host who’ll help you with everything from restaurant recommendations to taxi bookings.
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
+        A friendly, knowledgeable tour manager will escort you throughout your tour.
     </td>
     </tr>
     <tr>
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;" >
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
+        Our VIP door-to-door travel service is included on every tour.
+    </td>
+    </tr>    
+	<tr>
+    <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;" >
+        <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
+    </td>
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
         Travel insurance, including cover for over 4&zwj;0&zwj;0 pre-existing medical conditions. Cover subject to medical screening and a price reduction if insurance is not required.
     </td>
     </tr>
@@ -986,15 +989,15 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;" >
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
-        Return international flights (including many regional airports) with 20kg checked luggage and hotel transfers.
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
+        Excursions, accommodation, return international flights and overseas transfers.
     </td>
     </tr>
     <tr>
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;">
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
         The financial guarantees of our Protection Promise means your money’s safe as it's held in an independent Trust account. We’re ATOL protected and ABTA bonded, too.
     </td>
     </tr>
@@ -1106,7 +1109,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;">
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
         A friendly Saga Host who’ll help you with everything from restaurant recommendations to taxi bookings.
     </td>
     </tr>
@@ -1114,7 +1117,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;" >
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
         Travel insurance, including cover for over 4&zwj;0&zwj;0 pre-existing medical conditions. Cover subject to medical screening and a price reduction if insurance is not required.
     </td>
     </tr>
@@ -1122,7 +1125,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;" >
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
         Return international flights (including many regional airports) with 20kg checked luggage and hotel transfers.
     </td>
     </tr>
@@ -1130,7 +1133,7 @@ You’re just a few steps away from completing your booking for <a class="fz-17"
     <td class="pr-sm-6" width="30" style="padding-right: 12px; padding-bottom: 12px;">
         <img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81cdd51cd4fed93f17b3b5bf3dc0d949e348c180bb6e92a1adef4713d9b37ef0.png" width="30" alt="">
     </td>
-    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px;">
+    <td class="pl-sm-15" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;  font-weight:normal; text-align: left; padding-bottom: 12px; padding-right: 20px;">
         The financial guarantees of our Protection Promise means your money’s safe as it's held in an independent Trust account. We’re ATOL protected and ABTA bonded, too.
     </td>
     </tr>
