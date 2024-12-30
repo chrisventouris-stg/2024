@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no">
+<title><%= delivery.mailParameters.subject %></title>
+
+<!--[if mso]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<style>
+table {border-collapse: collapse;}
+td,th,div,p,a {font-size: 16px; line-height: 26px;}
+.spacer,.divider,div,p,a,h1,h2,h3,h4,h5,h6 {mso-line-height-rule: exactly;}
+td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",Helvetica,Arial,sans-serif;}
+</style>
+<![endif]--> 
+<!--[if !mso]><!-- -->
+<style type="text/css">
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff) format('woff');
+}
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff2) format('woff2');
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff) format('woff');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff2) format('woff2');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff) format('woff');
+font-weight: normal;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff2) format('woff2');
+font-weight: normal;
+}
+</style>
+
+<!--<![endif]-->
+
+<style type="text/css">
+@media only screen {
+body {
+font-size: 100%;
+font-family: sans-serif;
+background-color: #f7f7f7;
+color: #2a2a2a;
+}
+.col, td, th, div, p {
+font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+.sans-serif {
+font-family: 'Ambit', Arial, sans-serif!important;
+}
+}
+th {
+border-collapse: collapse!important;
+margin: 0 0!important;
+}
+a {
+font-weight: 600;
+text-decoration: underline;
+}
+#outlook a {
+padding: 0;
+font-size: inherit;
+line-height: inherit;
+}
+img {
+border: 0;
+line-height: 100%;
+vertical-align: middle;
+}
+.col {
+font-size: 16px;
+line-height: 26px;
+vertical-align: top;
+}
+
+@media only screen and (max-width: 730px) {
+.wrapper img {
+max-width: 100%;
+}
+.container {
+width: 100%!important;
+-webkit-text-size-adjust: 100%;
+}
+}
+
+@media only screen and (max-width: 669px) {
+.col {
+box-sizing: border-box;
+display: inline-block!important;
+line-height: 23px;
+width: 100%!important;
+}
+.col-sm-1 {
+max-width: 8.33333%;
+}
+.col-sm-2 {
+max-width: 16.66667%;
+}
+.col-sm-3 {
+max-width: 25%;
+}
+.col-sm-4 {
+max-width: 33.33333%;
+}
+.col-sm-5 {
+max-width: 41.66667%;
+}
+.col-sm-6 {
+max-width: 50%;
+}
+.col-sm-7 {
+max-width: 58.33333%;
+}
+.col-sm-8 {
+max-width: 66.66667%;
+}
+.col-sm-9 {
+max-width: 75%;
+}
+.col-sm-10 {
+max-width: 83.33333%;
+}
+.col-sm-11 {
+max-width: 91.66667%;
+}
+.full-width-sm {
+display: table!important;
+width: 100%!important;
+}
+.stack-sm-first {
+display: table-header-group!important;
+}
+.stack-sm-last {
+display: table-footer-group!important;
+}
+.stack-sm-top {
+display: table-caption!important;
+max-width: 100%;
+padding-left: 0!important;
+}
+.show-sm {
+display: inherit!important;
+font-size: inherit!important;
+line-height: inherit!important;
+max-height: none!important;
+}
+.hide-sm {
+display: none;
+font-size: 0;
+max-height: 0;
+line-height: 0;
+mso-hide: all;
+}
+.align-sm-center {
+display: table!important;
+float: none;
+margin-left: auto!important;
+margin-right: auto!important;
+}
+.align-sm-left {
+float: left;
+}
+.align-sm-right {
+float: right;
+}
+.text-sm-center {
+text-align: center!important;
+}
+.text-sm-left {
+text-align: left!important;
+}
+.text-sm-right {
+text-align: right!important;
+}
+.borderless-sm {
+border: none!important;
+}
+.nav-sm-vertical .nav-item {
+display: block;
+}
+.nav-sm-vertical .nav-item a {
+display: inline-block;
+padding: 4px 0!important;
+}
+.spacer {
+height: 0;
+}
+.img_full_width {
+width: 100%!important;
+height: auto!important;
+}
+.p-sm-0 {
+padding: 0!important;
+}
+.p-sm-10 {
+padding: 10px!important;
+}
+.p-sm-20 {
+padding: 20px!important;
+}
+.p-sm-30 {
+padding: 30px!important;
+}
+.pt-sm-0 {
+padding-top: 0!important;
+}
+.pt-sm-10 {
+padding-top: 10px!important;
+}
+.pt-sm-20 {
+padding-top: 20px!important;
+}
+.pt-sm-30 {
+padding-top: 30px!important;
+}
+.pr-sm-0 {
+padding-right: 0!important;
+}
+.pr-sm-10 {
+padding-right: 10px!important;
+}
+.pr-sm-20 {
+padding-right: 20px!important;
+}
+.pr-sm-30 {
+padding-right: 30px!important;
+}
+.pb-sm-0 {
+padding-bottom: 0!important;
+}
+.pb-sm-10 {
+padding-bottom: 10px!important;
+}
+.pb-sm-20 {
+padding-bottom: 20px!important;
+}
+.pb-sm-30 {
+padding-bottom: 30px!important;
+}
+.pl-sm-0 {
+padding-left: 0!important;
+}
+.pl-sm-10 {
+padding-left: 10px!important;
+}
+.pl-sm-20 {
+padding-left: 20px!important;
+}
+.pl-sm-30 {
+padding-left: 30px!important;
+}
+.px-sm-0 {
+padding-right: 0!important;
+padding-left: 0!important;
+}
+.px-sm-10 {
+padding-right: 10px!important;
+padding-left: 10px!important;
+}
+.px-sm-20 {
+padding-right: 20px!important;
+padding-left: 20px!important;
+}
+.px-sm-30 {
+padding-right: 30px!important;
+padding-left: 30px!important;
+}
+.py-sm-0 {
+padding-top: 0!important;
+padding-bottom: 0!important;
+}
+.py-sm-10 {
+padding-top: 10px!important;
+padding-bottom: 10px!important;
+}
+.py-sm-20 {
+padding-top: 20px!important;
+padding-bottom: 20px!important;
+}
+.py-sm-30 {
+padding-top: 30px!important;
+padding-bottom: 30px!important;
+}
+.smallerfont {
+font-size: 90%!important;
+line-height: 1.1!important;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.smallerfont {
+font-size: 85%!important;
+}
+
+.fz-16{
+font-size: 17px !important;
+line-height: 24px !important;
+}
+	
+.fz-28{
+font-size: 26px !important;
+line-height: 30px !important;
+}	
+
+}
+
+@media only screen and (max-width: 390px) {
+.smallerfont {
+font-size: 80%!important;
+}
+}
+</style>
+</head>
+
+<body style="box-sizing:border-box;margin:0;padding:0;width:100%;word-break:break-word;-webkit-font-smoothing:antialiased;">
+<div style="display:none;font-size:0;line-height:0; overflow:hidden: mso-hide:all;">
+Non-stop flights and local delights in Canada
+</div>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td height="1px" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td width="100%" height="0" style="font-size:0px; line-height:0px; color:#2a2a2a; font-family: 'Ambit', Arial, sans-serif; text-align:center;"></td>
+</tr>
+</table>
+<table class="wrapper" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;"><img class="img_full_width" src="https://sagagroup-mkt-prod1.campaign.adobe.com/res/sagagro_mkt_prod1/4454377f22f469877a226b9446d63ab4.png" width="700" height="1" alt="" style="display: block; border: 0; outline: none;" border="0" /></td>
+</tr>
+<tr>
+<td width="100%" height="1" style="font-size:1px; line-height:1px; color:#2a2a2a; font-family: 'Ambit', Arial, sans-serif; text-align:center;">&nbsp;</td>
+</tr>
+<tr>
+<td class="px-sm-10" align="center" style="color:#888888; font-family: 'Ambit', Arial, sans-serif; font-size:14px; line-height:18px;"><span style="display:inline-block"><a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage" style="color:#1e3282; font-weight:bold; text-decoration: underline;">View this email online</a></span></td>
+</tr>
+<tr>
+<td style="font-size:1px; line-height:1px; padding-top:18pt;">&nbsp;</td>
+</tr>
+</table>
+
+<!--prehead end--> 
+<!-- EIE Header section -->
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" width="700" style="border-collapse: collapse;">
+<tr>
+<td align="left"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center">
+<tr>
+<td bgcolor="#AAD7D7"><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="center" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col pl-sm-20" align="center" width="140" style="font-size:1px; line-height: 1px; vertical-align:top;"><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:22px">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="https://holiday.saga.co.uk?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|header_logo|image" target="_blank"><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Saga_Top_01.png" alt="Saga" width="140" height="auto" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a></td>
+</tr>
+<tr>
+<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:22px">&nbsp;</td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center" width="208" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="center" width="260" style="ont-size:1px; line-height: 1px; mso-line-height-rule: exactly;"><table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; ">
+<tr>
+<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:18px">&nbsp;</td>
+</tr>
+<tr>
+<td style=" font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:62px">&nbsp;</td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center"  width="22" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="center" width="25" style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="left" bgcolor="#fa8f3a" width="25" style="font-size:1px; line-height: 1px;"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" height="100%" style="border-collapse: collapse;">
+<tr>
+<td>&nbsp;</td>
+</tr>
+</table></th>
+<th class="col" align="center" width="625" style=" font-size:1px; line-height: 1px; vertical-align:top;"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td width="20" bgcolor="#fa8f3a"><img src="https://www.saga.co.uk/emails/2021/EIE_2021/EIE_Headspace.png" alt="" width="1" height="auto" style="display:block; height:auto; outline:none; border:0;"></td>
+<td><a href="https://holiday.saga.co.uk/holidays/north-america/canada?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|hero|image" target="_blank"><img src="https://www.saga.co.uk/emails/2023/Tours/015414_ST_Air_Canada_Tourist_Board_Email_header.jpg" alt="A holiday is so much more when it’s a tour" width="625" height="auto" class="img_full_width" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a></td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center" width="25" style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col px-sm-20" align="left" width="630" style=" vertical-align:top;"><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px;; mso-line-height-rule: exactly; padding-top:20px;">&nbsp;</td>
+</tr>
+<tr>
+<td class="fz-28" align="center" style="font-family: 'Ambit', arial, sans-serif; font-size:40px; line-height:46px; mso-line-height-rule: exactly; text-align:left; font-weight:normal; color:#1e3282;"><span style="font-weight: bold">
+A holiday is so much more</span> when it’s a tour
+</td>
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; mso-line-height-rule: exactly; padding-top:20px;">&nbsp;</td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center" width="40" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- EIE Header section --> 
+<!-- lead text --> 
+
+<!-- lead text end -->
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" bgcolor="#fdfdfd" role="presentation" width="700" style="border-collapse: collapse;">
+<tr>
+<td align="left" class="px-sm-20"><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr>
+<th width="50" align="center" class="hide-sm" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" width="600" align="left" ><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr>
+<td style="font-size:1px; line-height:20px; mso-line-height: exactly; text-align:left; padding-top: 10px">&nbsp;</td>
+</tr>
+<tr>
+<td style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 28px; mso-line-height: exactly; text-align:left; font-weight:normal;"><%@ include view='GR_salutationReformatter' %>,<br><br>
+Canada is a vast land of jaw-dropping beauty, charm, and adventure. Discover the vibrant city life of Toronto, where the iconic CN Tower pierces the sky. Lose yourself in the historic charm of Quebec City's cobbled streets. Or marvel at the awe-inspiring Banff National Park, where emerald lakes mirror towering mountain peaks.
+<br><br>
+Indulge in poutine, a Canadian comfort food masterpiece featuring crispy fries smothered in gravy and cheese curds. Savour the freshness of Atlantic lobster in the Maritimes. And satisfy your sweet tooth with some delicious maple syrup cookies. Beyond the sights and tastes, the warmth of the Canadian people adds an extra layer of charm to your experience. Whether you're greeted with a friendly smile or sharing stories with passionate locals, Canada promises to leave you longing for more.
+<br><br>
+To get you there in style, we've teamed up with award-winning Air Canada. They provide the most non-stop flights from London Heathrow to Canada, offering comfortable cabins and exceptional service. Ready to plan your own Canadian experience? Reach out to our travel experts by giving us a call or visit our website.
+</td>
+</tr>	
+<tr>
+<td style="font-size:1px; line-height:20px; mso-line-height: exactly; text-align:left; padding-top: 20px">&nbsp;</td>
+</tr>
+<tr>
+<td style="line-height: 40px;"><table align="left" class="full-width-sm" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;">
+<th bgcolor="#1e3282" style="border-radius: 15px 0px 15px 0px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> <a href="https://holiday.saga.co.uk/holidays/north-america/canada?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|hero|button" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 20px 12px 50px; text-decoration: none;  color: #fffffe; font-weight:bold;">Find&nbsp;out&nbsp;more&emsp;&emsp;&#10132;</a></th>
+</table></td>
+</tr>
+<tr>
+<td style="font-size:1px; line-height:20px; mso-line-height: exactly; text-align:left; padding-top: 20px">&nbsp;</td>
+</tr>
+</table></th>
+<th width="50" align="center" class="hide-sm" style="font-family: 'Ambit', Arial, sans-serif; font-size:16px; line-height: 20pt;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E5F3F3" width="700" style="border-collapse: collapse;">
+<tr>
+<td background="https://www.saga.co.uk/emails/2021/EIE_2021/marble_strip.jpg" bgcolor="#1e3282" width="700" height="16" valign="top" style="background-repeat: repeat; background-position: center; background-size: cover; overflow:hidden;"><!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:700px; height:16px;position:relative;">
+<v:fill type="tile" src="https://www.saga.co.uk/emails/2021/EIE_2021/marble_strip.jpg" color="#1e3282" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+
+<div>
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:16px;">&nbsp;</td>
+</tr>
+</table>
+</div>
+
+<!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]--></td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E5F3F3" width="700"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" align="center" width="600"
+style="font-size:1px; line-height: 1px; vertical-align:top;"> 
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+
+<tr>
+<td style="font-size:1px; line-height:1px; mso-line-height: exactly; text-align:left; padding-top: 40px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#1e3282" class="px-sm-20 fz-16" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:27px; mso-line-height-rule: exactly; font-weight:bold; text-align: center; color:#ffffff; padding:6px 6px" >
+Save £&zwj;6&zwj;0&zwj;0&zwj;pp on 1&zwj;3 J&zwj;u&zwj;l&zwj;y 2&zwj;0&zwj;2&zwj;4 departure	
+</td>
+</tr>
+<tr>
+<td align="left" class="col">
+<a href="https://holiday.saga.co.uk/holidays/north-america/deluxe-alaskan-voyage-and-rocky-mountaineer?pas=2&dur=Any&from=Any?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod1|image" target="_blank">
+<img src="https://www.saga.co.uk/emails/2023/Tours/015414_ST_Air_Canada_Tourist_Board_Email_contentblock1.jpg" alt="Deluxe Alaskan Voyage and the Rocky Mountaineer" width="600" height="auto" class="img_full_width" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;">
+</a>
+</td>
+</tr>
+<!-- OFFER START -->
+<tr>
+<td align="left" bgcolor="#fa8f3a" class="px-sm-20 fz-16" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#ffffff; padding:6px 30px">
+1&zwj;7 nights from £&zwj;6&zwj;,&zwj;3&zwj;3&zwj;5pp
+</td>
+</tr> 
+<!-- OFFER END -->
+</table>
+</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" height="30px" bgcolor="#E5F3F3"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th align="center" width="540" bgcolor="#fdfdfd"
+style="font-size:1px; line-height: 1px; vertical-align:middle;"> 
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" width="100%">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" align="left">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<!-- TITLE START -->
+<tr>
+<td align="left"
+style="font-family:'Ambit', arial, sans-serif; font-size:22px; line-height:32px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#1e3282;"> 
+Deluxe Alaskan Voyage and the Rocky Mountaineer
+</td>
+</tr>
+<!-- TITLE END -->
+<tr>
+<td style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:12px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:normal; text-align: left;">
+Pairing the famous Rocky Mountaineer and an Alaska cruise, captivating vistas will unfold on every turn of this incredible cruise and tour holiday.
+</td>
+</tr>
+<tr>
+<td
+style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:20px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="line-height: 40px;">
+<table align="left" class="full-width-sm" cellspacing="0" cellpadding="0" border="0"
+style="border-collapse: collapse;">
+<th bgcolor="#1e3282"
+style="border-radius: 15px 0px 15px 0px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> 
+<a href="https://holiday.saga.co.uk/holidays/north-america/deluxe-alaskan-voyage-and-rocky-mountaineer?pas=2&dur=Any&from=Any?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod1|button" target="_blank"
+style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 20px 12px 50px; text-decoration: none;  color: #fffffe; font-weight:bold;">Find&nbsp;out&nbsp;more&emsp;&emsp;&#10132;</a> 
+</th>
+</table></td>
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+
+</table></td>
+</tr>
+</table>
+	
+	
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E5F3F3" width="700"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" align="center" width="600"
+style="font-size:1px; line-height: 1px; vertical-align:top;"> 
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+
+<tr>
+<td style="font-size:1px; line-height:1px; mso-line-height: exactly; text-align:left; padding-top: 30px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#1e3282" class="px-sm-20 fz-16" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:27px; mso-line-height-rule: exactly; font-weight:bold; text-align: center; color:#ffffff; padding:6px 6px" >
+Save £&zwj;5&zwj;0&zwj;0&zwj;pp on 1&zwj;3 and 2&zwj;0 J&zwj;u&zwj;n&zwj;e 2&zwj;0&zwj;2&zwj;4 departures	
+</td>
+</tr>
+<tr>
+<td align="left" class="col">
+<a href="https://holiday.saga.co.uk/holidays/north-america/canada/canadian-rockies-and-vancouver?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod1|image" target="_blank">
+<img src="https://www.saga.co.uk/emails/2023/Tours/015414_ST_Air_Canada_Tourist_Board_Email_contentblock2.jpg" alt="Canadian Rockies and Vancouver" width="600" height="auto" class="img_full_width" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;">
+</a>
+</td>
+</tr>
+<!-- OFFER START -->
+<tr>
+<td align="left" bgcolor="#fa8f3a" class="px-sm-20 fz-16" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#ffffff; padding:6px 30px">
+1&zwj;3 nights from £4&zwj;,&zwj;1&zwj;9&zwj;5pp</td>
+</tr> 
+<!-- OFFER END -->
+</table>
+</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" height="30px" bgcolor="#E5F3F3"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th align="center" width="540" bgcolor="#fdfdfd"
+style="font-size:1px; line-height: 1px; vertical-align:middle;"> 
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" width="100%">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" align="left">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<!-- TITLE START -->
+<tr>
+<td align="left"
+style="font-family:'Ambit', arial, sans-serif; font-size:22px; line-height:32px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#1e3282;"> 
+Canadian Rockies and Vancouver
+</td>
+</tr>
+<!-- TITLE END -->
+<tr>
+<td style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:12px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:normal; text-align: left;">
+On this 14-day Canadian Rockies tour, you’ll twist along the highs and lows of the vast landscape through sweeping scenery, mighty mountains, deep forests and pristine lakes and rivers.
+</td>
+</tr>
+<tr>
+<td
+style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:20px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="line-height: 40px;">
+<table align="left" class="full-width-sm" cellspacing="0" cellpadding="0" border="0"
+style="border-collapse: collapse;">
+<th bgcolor="#1e3282"
+style="border-radius: 15px 0px 15px 0px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> 
+<a href="https://holiday.saga.co.uk/holidays/north-america/canada/canadian-rockies-and-vancouver?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod1|button" target="_blank"
+style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 20px 12px 50px; text-decoration: none;  color: #fffffe; font-weight:bold;">Find&nbsp;out&nbsp;more&emsp;&emsp;&#10132;</a> 
+</th>
+</table></td>
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+	
+	
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E5F3F3" width="700"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" align="center" width="600"
+style="font-size:1px; line-height: 1px; vertical-align:top;"> 
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+
+<tr>
+<td style="font-size:1px; line-height:1px; mso-line-height: exactly; text-align:left; padding-top: 30px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#1e3282" class="px-sm-20 fz-16" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:27px; mso-line-height-rule: exactly; font-weight:bold; text-align: center; color:#ffffff; padding:6px 6px" >
+Save £&zwj;5&zwj;0&zwj;0pp on 2&zwj;2 A&zwj;u&zwj;g&zwj;u&zwj;s&zwj;t 2&zwj;0&zwj;2&zwj;4 departure	
+</td>
+</tr>
+<tr>
+<td align="left" class="col">
+<a href="https://holiday.saga.co.uk/holidays/north-america/canada/great-cities-of-eastern-canada?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod2|image" target="_blank">
+<img src="https://www.saga.co.uk/emails/2023/Tours/015414_ST_Air_Canada_Tourist_Board_Email_contentblock3.jpg" alt="Great Cities of Eastern Canada" width="600" height="auto" class="img_full_width" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;">
+</a>
+</td>
+</tr>
+<!-- OFFER START -->
+<tr>
+<td align="left" bgcolor="#fa8f3a" class="px-sm-20 fz-16" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#ffffff; padding:6px 30px">
+1&zwj;4 nights from £&zwj;4&zwj;,&zwj;3&zwj;9&zwj;5pp
+</td>
+</tr> 
+<!-- OFFER END -->
+</table>
+</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" height="30px" bgcolor="#E5F3F3"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th align="center" width="540" bgcolor="#fdfdfd"
+style="font-size:1px; line-height: 1px; vertical-align:middle;"> 
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" width="100%">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" align="left">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<!-- TITLE START -->
+<tr>
+<td align="left"
+style="font-family:'Ambit', arial, sans-serif; font-size:22px; line-height:32px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#1e3282;"> 
+Great Cities of Eastern Canada
+</td>
+</tr>
+<!-- TITLE END -->
+<tr>
+<td style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:12px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:normal; text-align: left;">
+Eastern Canada is a whirlwind of cityscapes, old-world French charm, and fresh sea breezes in historic maritime towns. We uncover its best bits across 15 days.
+</td>
+</tr>
+<tr>
+<td
+style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:20px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="line-height: 40px;">
+<table align="left" class="full-width-sm" cellspacing="0" cellpadding="0" border="0"
+style="border-collapse: collapse;">
+<th bgcolor="#1e3282"
+style="border-radius: 15px 0px 15px 0px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> 
+<a href="https://holiday.saga.co.uk/holidays/north-america/canada/great-cities-of-eastern-canada?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod2|button" target="_blank"
+style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 20px 12px 50px; text-decoration: none;  color: #fffffe; font-weight:bold;">Find&nbsp;out&nbsp;more&emsp;&emsp;&#10132;</a> 
+</th>
+</table></td>
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+
+</table></td>
+</tr>
+</table>
+	
+
+
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E5F3F3" width="700"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" align="center" width="600"
+style="font-size:1px; line-height: 1px; vertical-align:top;"> 
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<!--
+<tr>
+<td align="center" style="font-family:'Ambit', arial, sans-serif; font-size: 42px; text-align:left; line-height:54px; mso-line-height: exactly; font-weight:normal; color:#1e3282;"><span style="font-weight: bold;">Take your pick…</span></td>
+</tr>
+-->
+<tr>
+<td style="font-size:1px; line-height:1px; mso-line-height: exactly; text-align:left; padding-top: 30px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#1e3282" class="px-sm-20 fz-16" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:27px; mso-line-height-rule: exactly; font-weight:bold; text-align: center; color:#ffffff; padding:6px 6px" >
+Save £&zwj;2&zwj;0&zwj;0pp on 1&zwj;9 and 2&zwj;6 A&zwj;u&zwj;g&zwj;u&zwj;s&zwj;t 2&zwj;0&zwj;2&zwj;4 departures	
+</td>
+</tr>
+<tr>
+<td align="left" class="col">
+<a href="https://holiday.saga.co.uk/holidays/north-america/canada/trans-canadian-rail-odyssey?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod3|image" target="_blank">
+<img src="https://www.saga.co.uk/emails/2023/Tours/015414_ST_Air_Canada_Tourist_Board_Email_contentblock4.jpg" alt="Trans Canadian Rail Odyssey" width="600" height="auto" class="img_full_width" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;">
+</a>
+</td>
+</tr>
+<!-- OFFER START -->
+<tr>
+<td align="left" bgcolor="#fa8f3a" class="px-sm-20 fz-16" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#ffffff; padding:6px 30px">
+1&zwj;3 n&zwj;i&zwj;g&zwj;h&zwj;t&zwj;s from £&zwj;5&zwj;,4&zwj;9&zwj;5pp
+</td>
+</tr> 
+<!-- OFFER END -->
+</table>
+</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="px-sm-20" align="left">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" height="30px" bgcolor="#E5F3F3"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;
+</th>
+<th align="center" width="540" bgcolor="#fdfdfd"
+style="font-size:1px; line-height: 1px; vertical-align:middle;"> 
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" width="100%">
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" align="left">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<!-- TITLE START -->
+<tr>
+<td align="left"
+style="font-family:'Ambit', arial, sans-serif; font-size:22px; line-height:32px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#1e3282;"> 
+Trans Canadian Rail Odyssey
+</td>
+</tr>
+<!-- TITLE END -->
+<tr>
+<td style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:12px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" width="100%"
+style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:normal; text-align: left;">
+After touring Toronto and taking in the might of Niagara Falls, sit back and relax on two train journeys across Canada - ‘The Canadian’ and the iconic Rocky Mountaineer.
+</td>
+</tr>
+<tr>
+<td
+style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:20px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="line-height: 40px;">
+<table align="left" class="full-width-sm" cellspacing="0" cellpadding="0" border="0"
+style="border-collapse: collapse;">
+<th bgcolor="#1e3282"
+style="border-radius: 15px 0px 15px 0px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> 
+<a href="https://holiday.saga.co.uk/holidays/north-america/canada/trans-canadian-rail-odyssey?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|pod3|button" target="_blank"
+style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 20px 12px 50px; text-decoration: none;  color: #fffffe; font-weight:bold;">Find&nbsp;out&nbsp;more&emsp;&emsp;&#10132;</a> 
+</th>
+</table></td>
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd"
+style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+
+</table></td>
+</tr>
+</table>
+
+
+	
+
+	
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E5F3F3" width="700"
+style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" align="left">
+
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+
+
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#AAD7D7" width="700" style="border-collapse: collapse;">
+<tr>
+<td background="https://www.saga.co.uk/emails/2021/EIE_2021/marble_strip.jpg" bgcolor="#1e3282" width="700" height="16" valign="top" style="background-repeat: repeat; background-position: center; background-size: cover; overflow:hidden;"><!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:700px; height:16px;position:relative;">
+<v:fill type="tile" src="https://www.saga.co.uk/emails/2021/EIE_2021/marble_strip.jpg" color="#1e3282" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+
+<div>
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:16px;">&nbsp;</td>
+</tr>
+</table>
+</div>
+
+<!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]--></td>
+</tr>
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#AAD7D7" width="700" style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" align="left"><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" align="center" width="600" style="font-size:1px; line-height: 1px; vertical-align:top;"><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="left" class="col"><a href="https://holiday.saga.co.uk/holidays/holiday-types/hotel/saga-hosted-hotels?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|footer|image" target="_blank"><img src="https://www.saga.co.uk/emails/2023/Stays/100_hosted_hotels_banner.jpg" alt="Save an extra £100pp off all Hosted Hotel holidays departing before January 2024" width="600" height="auto" class="img_full_width" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a></td>
+</tr>
+</table></th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+	
+	
+<tr>
+<td class="px-sm-20" align="left"><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<th class="hide-sm" align="left" width="50" height="30px" bgcolor="#AAD7D7" style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd" style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th align="center" width="540" bgcolor="#fdfdfd" style="font-size:1px; line-height: 1px; vertical-align:middle;"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" width="100%"><table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" align="left">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" style="font-family:'Ambit', arial, sans-serif; font-size:22px; line-height:30px; mso-line-height-rule: exactly; font-weight:bold; text-align: left; color:#1e3282;" >Save an extra &pound;1&zwj;0&zwj;0&zwj;pp* off all Hosted Hotel holidays departing before 3&zwj;1 J&zwj;a&zwj;n&zwj;u&zwj;a&zwj;r&zwj;y 2&zwj;0&zwj;2&zwj;4</td>
+</tr>
+<tr>
+<td  style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:12px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" width="100%" style="font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:28px; mso-line-height-rule: exactly; font-weight:normal; text-align: left;" >
+Fancy escaping the gloomy weather this winter? If you book any holiday departing before 3&zwj;1 J&zwj;a&zwj;n&zwj;u&zwj;a&zwj;r&zwj;y 2&zwj;0&zwj;2&zwj;4 by 1&zwj;5 D&zwj;e&zwj;c&zwj;e&zwj;m&zwj;b&zwj;e&zwj;r 2&zwj;0&zwj;2&zwj;3, you’ll receive an extra &pound;&zwj;1&zwj;0&zwj;0&zwj;pp discount. This offer is not available online so once you’ve chosen your holiday, please call us to check availability and to book on <strong>0&zwj;8&zwj;0&zwj;0&nbsp;9&zwj;8&zwj;8&zwj;5&nbsp;8&zwj;8&zwj;6</strong>.	
+</td>
+</tr>
+<tr>
+<td  style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:20px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="line-height: 40px;"><table align="left" class="full-width-sm" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;">
+<th bgcolor="#1e3282" style="border-radius: 15px 0px 15px 0px; line-height: 100%; mso-padding-alt: 10px 40px 15px;"> <a href="https://holiday.saga.co.uk/holidays/holiday-types/hotel/saga-hosted-hotels?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|footer|button" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 30px 12px 50px; text-decoration: none;  color: #fffffe; font-weight:bold;">Find&nbsp;out&nbsp;more&emsp;&#10132;</a></th>
+</table></td>
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table></th>
+<th class="hide-sm" align="left" width="30" height="30px" bgcolor="#fdfdfd" style=" font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="hide-sm" align="left" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td style="line-height:20px; font-size:20px; padding-top:20px;">&nbsp;</td>
+</tr>        
+<!--
+<tr>
+<td bgcolor="#AAD7D7" style="line-height:15px; font-size:20px; padding-top:15px;">&nbsp;</td>
+</tr>
+-->
+</table></td>
+</tr>
+</table>
+
+
+<!-- EIE Footer section -->
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" bgcolor="#AAD7D7" role="presentation" width="700" style="border-collapse: collapse;">
+<tr>
+<td align="left"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center">
+<tr>
+<td class="col"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="center" width="285" style="font-size:1px; line-height: 1px;" bgcolor="#AAD7D7">&nbsp;</th>
+<th class="align-sm-center" align="center" width="130" style="font-size:1px; line-height: 1px; vertical-align:top;"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td bgcolor="#AAD7D7" ><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Saga_Symbol_01.png" alt="Saga" width="130" height="auto" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center" width="284" style="font-size:1px; line-height: 1px;" bgcolor="#AAD7D7">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" width="700" style="border-collapse: collapse;">
+<tr>
+<td align="left"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center">
+<tr>
+<td bgcolor="#1e3282"><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr>
+<td><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="center" width="285" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="align-sm-center" align="center" width="130" style="font-size:1px; line-height: 1px; vertical-align:top;"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Saga_Symbol_02.png" alt="Saga" width="130" height="auto" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></td>
+</tr>
+<tr>
+<td style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:38px">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="https://holiday.saga.co.uk?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|contacts|image"  target="_blank"><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Saga_EIE_2021_Logo_reverse.png" alt="Saga" width="130" height="auto" style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a></td>
+</tr>
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:50px;">&nbsp;</td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center" width="284" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="left" width="45" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" align="left" width="270" style="vertical-align:top;"><table class="col align-sm-center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center" class="reversetext htd" style="font-family: 'Ambit', arial, sans-serif; font-size:18px; text-align:center; line-height:38px; mso-line-height-rule: exactly; font-weight:bold; color:#ffffff;"><a href="https://www.saga.co.uk/benefits#chat?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|chat-to-us|image" target="_blank"><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Chat_Reverse.png" alt="" width="25" height="25" style="display:inline-block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;"></a>&ensp;Chat with us</td>
+</tr>
+</table></th>
+<th class="hide-sm" align="left" width="36" height="20" style="font-size:1px; line-height: 1px; border-right: solid #f8f8f8;">&nbsp;</th>
+<th class="full-width-sm" align="left" width="43" height="20" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="align-sm-center" align="left" width="260" style=" vertical-align:top;"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td align="center" class="reversetext htd" style="font-family: 'Ambit', arial, sans-serif; font-size:18px; text-align:center; line-height:38px; mso-line-height-rule: exactly; font-weight:bold; color:#ffffff;"><a href="https://www.facebook.com/Saga"  target="_blank"><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Facebook_logo_reverse.png" alt="" width="25" height="25" style="display:inline-block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a>&ensp;<a href="https://twitter.com/SagaUK"  target="_blank"><img src="https://www.saga.co.uk/emails/2021/EIE_2021/Twitter_Logo_Reverse.png" alt="" width="25" height="25" style="display:inline-block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center;" ></a>&ensp;Follow us</td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center" width="45" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:60px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- Ts & Cs -->
+<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="max-width:100%; border-collapse: collapse;">
+<tr>
+<td align="center"><table class="container" cellpadding="0" cellspacing="0" bgcolor="#fdfdfd" role="presentation" width="700" style="border-collapse: collapse;">
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:40px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="center" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col" align="center" width="600" style="font-size:1px; line-height: 1px; vertical-align:top;"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-20" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; line-height: 24px; mso-line-height-rule: exactly; text-align:left; font-weight:normal;"> 
+*Save £100 per person offer is applicable to all Hosted Hotel and Special Interest holidays departing before 31 January 2024. Valid on new bookings only made between 19 October and 15 December 2023. Please note: This offer is not available when booking online so please call on  0&zwj;8&zwj;0&zwj;0&nbsp;9&zwj;8&zwj;8&zwj;5&nbsp;8&zwj;8&zwj;6 to book your holiday.
+<br><br>
+<%@ include view='TR_Holidays_Marketing_Footer_Wording' %>
+</td>
+</tr>
+</table></th>
+<th class="hide-sm" align="center" width="49" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:50px;">&nbsp;</td>
+</tr>
+</table>
+<table class="container" cellpadding="0" cellspacing="0" role="presentation" width="700" style="border-collapse: collapse;" bgcolor="#bbc1d9">
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:50px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="left"><table cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center">
+<tr style="display:table; width:100%!important;">
+<th class="hide-sm" align="center" width="50" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+<th class="col-sm-6 px-sm-20" width="300" style="color:#2a2a2a; font-family: 'Ambit', Arial, sans-serif; font-size:16px; line-height:34px; mso-line-height-rule: exactly; text-align:left; max-width:160px; vertical-align: top;"> <%@ include view='TR_Footer_Links_EIE' %>
+<br />
+<%@ include view='TR_Travel_Unsub_Bottom_EIE' %></th>
+<th class="col-sm-6 px-sm-20" width="300" valign="top" style="color:#2a2a2a; font-family: 'Ambit', Arial, sans-serif; font-size:16px; line-height:34px; mso-line-height-rule: exactly; text-align:right; max-width:160px; font-weight:normal; vertical-align: top;">Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga<span style="mso-line-height: exactly; line-height:10px;"><br /></span>0&zwj;1&zwj;5&zwj;4&zwj;1&zwj;4</th>
+
+<br />
+</span></th>
+<th class="hide-sm" align="center" width="49" style="font-size:1px; line-height: 1px;">&nbsp;</th>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align="left" style="display:block; line-height:1px; font-size: 1px; mso-line-height-rule: exactly; padding-top:40px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+<!-- Ts & Cs -->
+</body>
+</html>
