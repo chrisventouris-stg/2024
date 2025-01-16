@@ -80,7 +80,17 @@ a {
 font-weight: 600;
 text-decoration: underline;
 }
-#outlook a {
+a { color:#1e3282 } /* Globally */
+
+/* Each state */
+
+
+a:visited { color:#1e3282; text-decoration: underline;  }
+a:hover { text-decoration: underline; color:#1e3282; }
+a:focus { text-decoration: underline; color:#1e3282; }
+a:hover, a:active { text-decoration: underline; color:#1e3282; }
+
+	#outlook a {
 padding: 0;
 font-size: inherit;
 line-height: inherit;
@@ -517,7 +527,7 @@ Andrea Bocelli 2025 is on sale now
 <!-- MASTERHEAD Start -->
 <table class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td align="center" style=" padding-bottom: 32px;"><table class="fullWidth" cellpadding="0" cellspacing="0"  role="presentation" width="600" style="border-collapse: collapse;">
+<td align="center" style=" padding-bottom: 36px;"><table class="fullWidth" cellpadding="0" cellspacing="0"  role="presentation" width="600" style="border-collapse: collapse;">
 <tr>
 <td align="center" class="px-sm-201"><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
 <tr>
@@ -542,7 +552,7 @@ Andrea Bocelli 2025 is on sale now
 <tr>
 <td></td>
 <td  width="20" height="50" bgcolor="#aad7d7" style="border-radius: 0px;">&nbsp;</td>
-<td class="fz-26 pr-sm-10" align="center" style="padding-left: 15px; font-family: 'Ambit', arial, sans-serif; font-size:28px; line-height:1.2em;  text-align:left; font-weight:700; color:#1e3282; ">Experience is&hellip; indulging in my interests whilst learning from the&nbsp;experts</td>
+<td class="fz-22 pr-sm-10" align="center" style="padding-left: 15px; font-family: 'Ambit', arial, sans-serif; font-size:28px; line-height:1.2em;  text-align:left; font-weight:700; color:#1e3282; ">Experience is&hellip; indulging in my interests whilst learning from the&nbsp;experts</td>
 </tr>
 </table></td>
 </tr>
@@ -563,7 +573,7 @@ Andrea Bocelli 2025 is on sale now
 <!--  SPACER  -->
 <tr>
 <td class="fz-17" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 1.5em; mso-line-height: exactly; text-align:left; font-weight:normal; padding-top: 0px; padding-bottom: 20px;">
-<a class="fz-17" href="https://holiday.saga.co.uk/holidays/europe/italy/andrea-bocelli-teatro-del-silenzio-2025?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_ANDREA_BOCELLI">Andrea Bocelli</a>, the renowned Italian tenor, has left a lasting mark on the world of classical and contemporary music. With his powerful and emotive voice, he captivates audiences globally, selling over 75 million records worldwide (including his top hit, Time to Say Goodbye). 
+<a class="fz-17" href="https://holiday.saga.co.uk/holidays/europe/italy/andrea-bocelli-teatro-del-silenzio-2025?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em;" _label="TXT_ANDREA_BOCELLI">Andrea Bocelli</a>, the renowned Italian tenor, has left a lasting mark on the world of classical and contemporary music. With his powerful and emotive voice, he captivates audiences globally, selling over 75 million records worldwide (including his top hit, <em>Time to Say&nbsp;Goodbye</em>). 
 </td>
 </tr>
 <tr>
@@ -595,7 +605,7 @@ Scroll down to book online or give us a call. And don’t forget, you can <stron
  <!-- MASTERHEAD Start -->
 <table class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td align="center" style=" padding-bottom: 24px;"><table class="fullWidth" cellpadding="0" cellspacing="0"  role="presentation" width="600" style="border-collapse: collapse;">
+<td align="center" style=" padding-bottom: 20px;"><table class="fullWidth" cellpadding="0" cellspacing="0"  role="presentation" width="600" style="border-collapse: collapse;">
 <tr>
 <td align="center" class="px-sm-201"><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
 <tr>
@@ -634,7 +644,7 @@ Scroll down to book online or give us a call. And don’t forget, you can <stron
 <!--  SPACER  -->
 <!-- TITLE START -->
 <tr>
-<td align="left" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:28px; color: #1e3282; font-weight:bold; text-align: left; padding: 0px 0px 12px 0px;" >Andrea Bocelli - Teatro del Silenzio&nbsp;2025 </td>
+<td class="fz-22" align="left" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:28px; color: #1e3282; font-weight:bold; text-align: left; padding: 0px 0px 16px 0px;" >Andrea Bocelli - Teatro del Silenzio&nbsp;2025 </td>
 </tr>
 
 <!-- TITLE END -->
@@ -807,7 +817,7 @@ Porterage at your hotel
 <th class="displayBlock"> <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" class="fullWidth innerBlockFullWidth" width="310" dir="ltr">
 <tbody>
 <tr>
-<td align="center" valign="top" class="pt-sm-20 pl-sm-0 pb-sm-20" style="line-height:1.2em; font-size:20px; font-weight:bold; font-family: 'Ambit', Arial, sans-serif; padding-top:0px; color:#1e3282; padding-bottom:6px; padding-right:10px; padding-left:14px; text-align: center;">Win a case of wine in our Instagram giveaway
+<td align="center" valign="top" class="pt-sm-20 pl-sm-0 pb-sm-20" style="line-height:1.2em; font-size:20px; font-weight:bold; font-family: 'Ambit', Arial, sans-serif; padding-top:0px; color:#1e3282; padding-bottom:6px; padding-right:10px; padding-left:14px; text-align: center;">Win a case of wine in our Instagram&nbsp;giveaway
 </td>
 </tr>
 

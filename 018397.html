@@ -80,6 +80,15 @@ a {
 font-weight: 600;
 text-decoration: underline;
 }
+a { color:#1e3282 } /* Globally */
+
+/* Each state */
+
+a:visited { color:#1e3282; text-decoration: underline;  }
+a:hover { text-decoration: underline; color:#1e3282; }
+a:focus { text-decoration: underline; color:#1e3282; }
+a:hover, a:active { text-decoration: underline; color:#1e3282; }
+
 #outlook a {
 padding: 0;
 font-size: inherit;
@@ -579,7 +588,7 @@ line-height: 30px !important;
 </tr>
 <tr>
 <td class="fz-17" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 1.5em;  text-align:left; font-weight:normal; padding-top: 0px; padding-bottom: 20px;">
-Soft sand, turquoise shallows, coconut palms gently swaying in the ocean breeze – there’s nothing like a spell on the shore to help you rest and recharge. And our great value, independent <a class="fz-17" href="https://holiday.saga.co.uk/holidays/holiday-types/tailor-made/luxury-beach-holidays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_TROPICAL_BEACH">tropical beach getaways</a> combine flights, exotic locations and four and five-star hotels in destinations like <a class="fz-17" href="https://holiday.saga.co.uk/holidays/asia/indonesia/bali/maya-ubud-resort-spa?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_BALI">Bali</a>, <a class="fz-17" href="https://holiday.saga.co.uk/holidays/asia/thailand/phuket/sunprime-kamala-beach-resort?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_THAILAND">Thailand</a>, the <a class="fz-17" href="https://holiday.saga.co.uk/holidays/africa/mauritius/sugar-beach?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INDIAN_OCEAN">Indian Ocean</a> and the <a class="fz-17" href="https://holiday.saga.co.uk/holidays/caribbean/barbados/sugar-cane-club-hotel-spa?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_CARIBBEAN">Caribbean</a>. Take a look at some of our top picks below and <strong>save&nbsp;10% if you book by 31 January* (quote SAVE10)</strong>. Call our friendly team to book on  <strong><a href="tel:08081343143" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_CONTACT_NUMBER">0808&nbsp;134&nbsp;3143</a></strong>.
+Soft sand, turquoise shallows, coconut palms gently swaying in the ocean breeze – there’s nothing like a spell on the shore to help you rest and recharge. And our great value, independent <a class="fz-17" href="https://holiday.saga.co.uk/holidays/holiday-types/tailor-made/luxury-beach-holidays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_TROPICAL_BEACH">tropical beach getaways</a> combine flights, exotic locations and four and five-star hotels in destinations like <a class="fz-17" href="https://holiday.saga.co.uk/holidays/asia/indonesia/bali/maya-ubud-resort-spa?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_BALI">Bali</a>, <a class="fz-17" href="https://holiday.saga.co.uk/holidays/asia/thailand/phuket/sunprime-kamala-beach-resort?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_THAILAND">Thailand</a>, the <a class="fz-17" href="https://holiday.saga.co.uk/holidays/africa/mauritius/sugar-beach?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_INDIAN_OCEAN">Indian Ocean</a> and the <a class="fz-17" href="https://holiday.saga.co.uk/holidays/caribbean/barbados/sugar-cane-club-hotel-spa?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_CARIBBEAN">Caribbean</a>. Take a look at some of our top picks below which have great savings and on top of that, you can <strong>save an additional 10% if you book by 31&nbsp;January* (quote SAVE10)</strong>. Call our friendly team to book on  <strong><a href="tel:08081343143" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:18px; line-height:1.5em; " _label="TXT_CONTACT_NUMBER">0808&nbsp;134&nbsp;3143</a></strong>.
 </td>
 </tr>
 
@@ -639,11 +648,11 @@ Sunprime Kamala
 </tr>
 <tr>
 <td align="left" width="100%"
-style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>SAVE 10%</strong>*</td>
+style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>Includes 10 free nights</strong></td>
 </tr>
 <tr>
 <td class="fz-18" align="left" width="100%"
-style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>2&zwj;1 nights B&amp;B <span style="font-weight: 400;">from</span>&nbsp;&pound;1,1&zwj;5&zwj;9pp</strong><s> &pound;X,X&zwj;X&zwj;Xpp</s> including flights*</td>
+style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>2&zwj;1 nights B&amp;B <span style="font-weight: 400;">from</span>&nbsp;&pound;1,1&zwj;1&zwj;1pp</strong><s> &pound;1,2&zwj;3&zwj;5pp</s> including flights*</td>
 </tr>
 <!-- SUB-TITLE END --> 
 <tr>
@@ -678,17 +687,17 @@ Maya Ubud &amp; Maya Sanur</td>
 
 <tr>
 <td align="left" width="100%"
-style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>SAVE 10%</strong>*</td>
+style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>Includes 35% hotel discount</strong></td>
 </tr>
 <tr>
 <td class="fz-18" align="left" width="100%"
-style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>1&zwj;1 nights B&amp;B <span style="font-weight: 400;">from</span>&nbsp;&pound;1,9&zwj;7&zwj;5pp</strong><s> &pound;X,X&zwj;X&zwj;Xpp</s> including flights*</td>
+style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>1&zwj;1 nights B&amp;B <span style="font-weight: 400;">from</span>&nbsp;&pound;1,9&zwj;0&zwj;3pp</strong><s> &pound;2,1&zwj;1&zwj;5pp</s> including flights*</td>
 </tr>
 <!-- SUB-TITLE START -->
 
 <tr>
 <td  class="heightAuto"  valign="top" align="left" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em; mso-line-height: exactly; text-align:left; font-weight:normal; padding-bottom: 20px; padding-top: 0px;  mso-line-height-rule:exactly; mso-padding-alt: 0px 0px 20px 0px;" >
-Relax at a Balinese beach resort, <a class="fz-17" href="https://holiday.saga.co.uk/holidays/asia/indonesia/bali/maya-sanur-resort-spa?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:17px; line-height:1.5em; " _label="TXT_MAYA_SANUR">Maya Sanur</a>, or a scenic riverside retreat in Ubud.     
+Relax at a Balinese beach resort, <a class="fz-17" href="https://holiday.saga.co.uk/holidays/asia/indonesia/bali/maya-sanur-resort-spa?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|body|textlink1" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:17px; line-height:1.5em; " _label="TXT_MAYA_SANUR">Maya Sanur</a>, and a scenic riverside retreat in&nbsp;Ubud.     
 </td>
 </tr>
 <!--			CTA		-->
@@ -745,11 +754,11 @@ Relax at a Balinese beach resort, <a class="fz-17" href="https://holiday.saga.co
 </tr>
 <tr>
 <td align="left" width="100%"
-style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>SAVE 10%</strong>*</td>
+style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>Includes 35% hotel discount</strong></td>
 </tr>
 <tr>
 <td class="fz-18" align="left" width="100%"
-style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>7&zwj; nights all-inclusive <span style="font-weight: 400;">from</span>&nbsp;&pound;2,7&zwj;9&zwj;9pp</strong><s> &pound;X,X&zwj;X&zwj;Xpp</s> including flights*</td>
+style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>7&zwj; nights all-inclusive <span style="font-weight: 400;">from</span>&nbsp;&pound;2,6&zwj;8&zwj;6pp</strong><s> &pound;2,9&zwj;8&zwj;5pp</s> including flights*</td>
 </tr>
 
 
@@ -784,11 +793,11 @@ style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Ar
 
 <tr>
 <td align="left" width="100%"
-style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>SAVE 10%</strong>*</td>
+style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>Includes 29% hotel discount</strong></td>
 </tr>
 <tr>
 <td class="fz-18" align="left" width="100%"
-style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>2&zwj;1 nights all-inclusive <span style="font-weight: 400;">from</span>&nbsp;&pound;1,8&zwj;5&zwj;9pp</strong><s> &pound;X,X&zwj;X&zwj;Xpp</s></td>
+style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>2&zwj;1 nights all-inclusive <span style="font-weight: 400;">from</span>&nbsp;&pound;1,7&zwj;8&zwj;6pp</strong><s> &pound;1,9&zwj;8&zwj;5pp</s> including flights*</td>
 </tr>
 <tr>
 <td height="80"  class="heightAuto" valign="top" align="left" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em; mso-line-height: exactly; text-align:left; font-weight:normal; padding-bottom: 20px; padding-top: 0px;  mso-line-height-rule:exactly; mso-padding-alt: 0px 0px 20px 0px;" >
@@ -848,11 +857,11 @@ Sugar Beach
 </tr>
 <tr>
 <td align="left" width="100%"
-style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>SAVE 10%</strong>*</td>
+style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>Includes 2 free nights</strong></td>
 </tr>
 <tr>
 <td class="fz-18" align="left" width="100%"
-style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>7&zwj; nights half board <span style="font-weight: 400;">from</span>&nbsp;&pound;1,8&zwj;9&zwj;5pp</strong><s> &pound;X,X&zwj;X&zwj;Xpp</s> including flights*</td>
+style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>7&zwj; nights half board <span style="font-weight: 400;">from</span>&nbsp;&pound;1,8&zwj;2&zwj;2pp</strong><s> &pound;2,0&zwj;2&zwj;5pp</s> including flights*</td>
 </tr>
 
 <!-- SUB-TITLE END --> 
@@ -880,7 +889,7 @@ Spoil yourself at this colonial-style beachfront property overlooking the Indian
 </tr>
 <tr>
 <td height="46" class="heightAuto" align="left" style="font-family:'Ambit', arial, sans-serif; line-height:1.3em; font-size:18px; font-weight:700; text-align: left; color:#1e3282; padding-top:15px; padding-bottom:2px; vertical-align: top;" >
-Intercontinental Ras Al Khairmah Mina Al Arab Resort &amp; Spa 
+Intercontinental Ras Al Khaimah Mina Al Arab Resort &amp; Spa 
 </td>
 </tr>
 <tr>
@@ -889,11 +898,11 @@ Intercontinental Ras Al Khairmah Mina Al Arab Resort &amp; Spa
 </tr>
 <tr>
 <td align="left" width="100%"
-style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>SAVE 10%</strong>*</td>
+style="line-height:1.3em;font-size:16px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:2px;padding-right:0px; padding-left:0px; color:#fa8f3a"><strong>Includes 45% hotel discount</strong></td>
 </tr>
 <tr>
 <td class="fz-18" align="left" width="100%"
-style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>7&zwj; nights B&amp;B <span style="font-weight: 400;">from</span>&nbsp;&pound;1,2&zwj;0&zwj;9pp</strong><s> &pound;X,X&zwj;X&zwj;Xpp</s> including flights*</td>
+style="line-height:1.3em;font-size:17px;font-weight:400;font-family: 'Ambit', Arial, sans-serif; padding-top:0px; padding-bottom:8px;padding-right:0px; padding-left:0px;"><strong>7&zwj; nights B&amp;B <span style="font-weight: 400;">from</span>&nbsp;&pound;1,1&zwj;6&zwj;5pp</strong><s> &pound;1,2&zwj;9&zwj;5pp</s> including flights*</td>
 </tr>
 
 <!-- SUB-TITLE START -->
@@ -1185,7 +1194,7 @@ Sugar Cane Club Hotel &amp; Spa: Price is based on 2 adults sharing for 7 nights
 <br><br>
 Sugar Beach, Mauritius: Price is based on 2 adults sharing for 7 nights in a Deluxe Sea View room on a half board basis. Includes private resort transfers and return international flights with British Airways. Includes 2 free nights for all stays of 7 nights and above and is valid for travel between 01 May 2025 and 12 July 2025. Advertised price is based on selected departures in June 2025 but airline prices may vary. Book by 31 January 2025. Price is correct at time of publishing.  
 <br><br>
-Intercontinental Ras Al Khairmah Mina Al Arab Resort &amp; Spa: Price is based on 2 adults sharing for 7 nights in a Classic Sea View room on a half board basis. Includes shared shuttle resort transfers and return international flights with British Airways. Includes 45% hotel discount and is valid for travel between 09 June 2025 and 31 August 2025. Advertised price is based on selected departures in August 2025 but airline prices may vary. Book by 31 January 2025. Price is correct at time of publishing. 
+Intercontinental Ras Al Khaimah Mina Al Arab Resort &amp; Spa: Price is based on 2 adults sharing for 7 nights in a Classic Sea View room on a half board basis. Includes shared shuttle resort transfers and return international flights with British Airways. Includes 45% hotel discount and is valid for travel between 09 June 2025 and 31 August 2025. Advertised price is based on selected departures in August 2025 but airline prices may vary. Book by 31 January 2025. Price is correct at time of publishing. 
 <br><br>
  
 <%@ include view='TR_Holidays_Tailormade_Marketing_Footer_Wording' %>
