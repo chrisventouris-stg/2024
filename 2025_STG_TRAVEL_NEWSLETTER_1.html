@@ -1077,8 +1077,10 @@ alt="" width="25" height="25" style="display:inline-block; height:auto; outline:
 <a href="https://www.instagram.com/sagatraveluk?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|SOCIAL|INSTAGRAM"  target="_blank" _label="SAGA_INSTAGRAM"><img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/e87166bcd3d7c91c426acf3b5cc81335cea185d9dd64b645813fdc777ccc6c75.png" alt="" width="25" height="25" style="display:inline-block; height:auto;" ></a>&ensp;
 <a href="https://www.youtube.com/@SagaHolidays_?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|SOCIAL|YOUTUBE"  target="_blank" _label="SAGA_YOUTUBE"><img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/d229c214ed534550c0d3a8171b18d7ff6be5a2dd3df57e46a6931be7c27f6002.png" alt="" width="25" height="25" style="display:inline-block; height:auto;" ></a>&ensp;<span style="font-family: 'Ambit', arial, sans-serif; font-size:18px; text-align:center; line-height:38px; mso-line-height-rule: exactly; font-weight:bold; color:#ffffff; vertical-align: middle;">Follow us</span></td>
 </tr>
+
 </table></td>
 </tr>
+
 </table></td>
 </tr>
 <!--SOCIALS-->
@@ -1086,12 +1088,29 @@ alt="" width="25" height="25" style="display:inline-block; height:auto; outline:
 <tr>
 <td bgcolor="#1e3282" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; padding-top:38px">&nbsp;</td>
 </tr>
+
 </table>
 <!--P1--> 
 <!-- FOOTER --> 
 
 
+<!--UNSUB-->
+<table class="fullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;" bgcolor="#1e3282">
 
+<tr>
+<td align="left" valign="top"><table role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth" style="padding: 5px 0px 5px 0px;">
+<tr>
+
+<td  align="center" style="font-family: 'Ambit', arial, sans-serif; font-size:14px; line-height:1.2em;  text-align:center; font-weight:400; color:#FFFFFF; padding-left: 20px; padding-right:20px;" >Update your contact preferences or unsubscribe <%@ include view='TR_Escorted_Touring_Unsub_Bottom_EIE_NEW_FOOTER' %></td>
+
+</tr>
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!--UNSUB-->
 
 <!-- T&CS -->
 <table class="innerBlockFullWidth" align="center" width="600" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
@@ -1119,10 +1138,10 @@ alt="" width="25" height="25" style="display:inline-block; height:auto; outline:
 <table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
 <td width="30%" align="left" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;">
-<%@ include view='TR_Footer_Links_EIE' %><br><%@ include view='TR_Escorted_Touring_Unsub_Bottom_EIE' %>
+<%@ include view='TR_Footer_Links_EIE' %>
 </td>
 <td width="30%" align="right" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;">
-Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga
+Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga 
 </td>
 </tr>
 </table>
