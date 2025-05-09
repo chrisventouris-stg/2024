@@ -96,9 +96,6 @@ line-height: 26px;
 vertical-align: top;
 }
 
-.mobile-image {
-display: none !important; /* Hide mobile image on Outlook desktop */
-}
 	
 @media only screen and (max-width: 730px) {
 .wrapper img {
@@ -108,7 +105,7 @@ max-width: 100%;
 width: 100%!important;
 -webkit-text-size-adjust: 100%;
 }
-	
+}
 
 
 @media only screen and (max-width: 669px) {
@@ -127,14 +124,16 @@ width: 92% !important;
 .mobImgCollage {
 width: 97.5% !important;
 }
-.desktop-image {
-display: none !important; /* Hide desktop image on mobile */
-}
-.mobile-image {
-display: block !important; /* Show mobile image on mobile */
-width: 100% !important;
-height: auto !important;
-}
+  .desktop-wrapper {
+    display: none !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .mobile-wrapper {
+    display: block !important;
+    max-height: none !important;
+  }
 
 .col {
 box-sizing: border-box;
@@ -543,9 +542,20 @@ line-height: 30px !important;
 <!--[if !mso]><!-->
 <td class="fullWidth" align="center">
 <!-- Desktop Image -->
-<a href="https://holiday.saga.co.uk/offers/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth desktop-image" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/81b53a69b7c8a2bae5b79ca28f2505018d579af3aa4f4459be8ccecfc2feaea5.png" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="desktop-wrapper" style="display: block;" >
+<tr>
+<td>
+<a href="https://holiday.saga.co.uk/offers/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth desktop-image" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/b91a6363a20ec7af090822b63115d8b0843e2b74f54267d1351db1fb03a3484b.png" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a>
+</td>
+</tr>
+</table>
 <!-- Mobile Image -->
-<a href="https://holiday.saga.co.uk/offers/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth mobile-image" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8b96699c6d88f4572c8e22c989587d4529e7a7de67a04626724fd31dc16c4963.png" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mobile-wrapper" style="display:none; mso-hide:all; max-height:0px; overflow:hidden;">
+<tr>
+<td><a href="https://holiday.saga.co.uk/offers/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth desktop-image" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8b96699c6d88f4572c8e22c989587d4529e7a7de67a04626724fd31dc16c4963.png" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a>
+</td>
+</tr>
+</table>
 </td>
 <!--<![endif]-->
 <!--[if mso]>
@@ -567,7 +577,7 @@ line-height: 30px !important;
 <tr>
 <td><table class="fullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; ">
 <tr>
-<td class="pt-sm-20" style="line-height:1px; font-size:1px; padding-top:12px;">&nbsp;</td>
+<td class="pt-sm-20" style="line-height:1px; font-size:1px; padding-top:8px;">&nbsp;</td>
 </tr>
 <tr>
 <td class="fz-16 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding-left: 80px; padding-right: 80px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam perspiciatis possimus iusto aperiam non nemo iure. Suscipit, esse animi exercitationem. </td>
