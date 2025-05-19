@@ -95,6 +95,12 @@ font-size: 16px;
 line-height: 26px;
 vertical-align: top;
 }
+	
+    table,
+    td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+    }
 
 @media only screen and (max-width: 730px) {
 .wrapper img {
@@ -519,7 +525,7 @@ line-height: 30px !important;
 </tr>
 <!--  SPACER  -->
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:10px;">&nbsp;</td>
+<td style="line-height:10px; mso-line-height-rule: exactly;">&nbsp;</td>
 </tr>
 <!--  SPACER  -->
 </table>
@@ -553,7 +559,7 @@ line-height: 30px !important;
 <!--<![endif]--> 
 <!--[if mso]>
 <td class="fullWidth" align="center">
-<a href="https://holiday.saga.co.uk/offers/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/a29696b3096a5425296d9dd4b76be3edebc3b044bf18d44abd8737d67a749ab8.png" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+<a href="https://holiday.saga.co.uk/offers/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/a29696b3096a5425296d9dd4b76be3edebc3b044bf18d44abd8737d67a749ab8.png" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
 <![endif]--> 
 </tr>
 </table></th>
