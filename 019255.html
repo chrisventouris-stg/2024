@@ -122,6 +122,15 @@ width: 92% !important;
 .mobImgCollage {
 width: 97.5% !important;
 }
+.desktop-wrapper {
+display: none !important;
+max-height: 0 !important;
+overflow: hidden !important;
+}
+.mobile-wrapper {
+display: block !important;
+max-height: none !important;
+}
 .col {
 box-sizing: border-box;
 display: inline-block!important;
@@ -515,17 +524,38 @@ line-height: 30px !important;
 <!--  SPACER  -->
 </table>
 <!-- NAV LINKS --> 
+ 
 
 <!-- HERO -->
-<table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
+<table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; " bgcolor="#FFFFFF">
 <tr>
-<td  align="center"><table cellpadding="0" cellspacing="0" role="presentation" bgcolor="" width="100%" style="border-collapse: collapse;">
+<td  align="center"><table cellpadding="0" cellspacing="0" role="presentation" bgcolor="FFFFFF" width="100%" style="border-collapse: collapse;">
 <tr>
 <td  align="center"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
 <th align="center" style="font-size:1px; line-height: 1px; vertical-align:top;"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr> 
+<!--[if !mso]><!-->
+<td class="fullWidth" align="center">
+<!-- Desktop Image -->
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="desktop-wrapper" style="display: block;" >
 <tr>
-<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/offers/hosted-holidays?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/6a43df875a72ad1ddf751437ddc0760056891dcff150121a5156ff2730680f68.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+<td><a href="https://holiday.saga.co.uk/offers/hosted-holidays?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth desktop-image" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/6a43df875a72ad1ddf751437ddc0760056891dcff150121a5156ff2730680f68.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+</tr>
+</table>
+
+<!-- Mobile Image -->
+
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mobile-wrapper" style="display:none; mso-hide:all; max-height:0px; overflow:hidden;">
+<tr>
+<td><a href="https://holiday.saga.co.uk/offers/hosted-holidays?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth desktop-image" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/67a151f865d906295f2a3e68b279c4e3cae459743fe7ee035fa4802b7d7b10d1.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+</tr>
+</table></td>
+<!--<![endif]--> 
+<!--[if mso]>
+<td class="fullWidth" align="center">
+<a href="https://holiday.saga.co.uk/offers/hosted-holidays?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/6a43df875a72ad1ddf751437ddc0760056891dcff150121a5156ff2730680f68.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+<![endif]--> 
 </tr>
 </table></th>
 </tr>
@@ -534,8 +564,7 @@ line-height: 30px !important;
 </table></td>
 </tr>
 </table>
-<!-- HERO --> 
-
+<!-- HERO -->
 <!--  TITLE - ACCENT	-->
 <table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0"  class="full-width-sm">
 <tr>
@@ -544,7 +573,7 @@ line-height: 30px !important;
 <tr>
 <td align="left" valign="top"><table role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth" style="padding: 0px 0px 0px 00px;">
 <tr>
-<td  class="fz-22 px-sm-24" align="center" style=" font-family: 'Ambit', arial, sans-serif; font-size:28px; line-height:1.2em;  text-align:center; font-weight:700; color:#1e3282; mso-hyphenate: none; padding-left: 40px; padding-right: 40px;">Add our nationwide return chauffeur service for just &pound;9&zwj;5 per&nbsp;booking*   </td>
+<td  class="fz-24 px-sm-20" align="center" style=" font-family: 'Ambit', arial, sans-serif; font-size:28px; line-height:1.2em;  text-align:center; font-weight:700; color:#1e3282; mso-hyphenate: none; padding-left: 40px; padding-right: 40px;">Add our nationwide return chauffeur service for just &pound;9&zwj;5 per&nbsp;booking*   </td>
 </tr>
 
 </table></td>
@@ -560,7 +589,7 @@ line-height: 30px !important;
 </tr>
 <tr>
 <td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding-left: 40px; padding-right: 40px;">
-There’s still time to take advantage of this special offer across our entire hosted holidays range (previously only available for selected hotels). It’s the perfect start and end to your holiday, but you’ll need to be quick to get it at this price – the offer ends this Sunday 1 June. Call <a class="fz-16" href="tel:08082232729" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:17px; line-height:1.5em; " _label="TXT_CONTACT_NUMBER">0808&nbsp;223&nbsp;2729</a> and quote <strong>CAR95</strong> to&nbsp;book. 
+There’s still time to take advantage of this special offer across our entire hosted holidays range (previously only available for selected hotels). It’s the perfect start and end to your holiday, but you’ll need to be quick to get it at this price – the offer ends this S&zwj;u&zwj;n&zwj;d&zwj;a&zwj;y 1 J&zwj;u&zwj;n&zwj;e. Call <a class="fz-16" href="tel:08082232729" target="_blank" style="color:#1e3282; font-family:'Ambit', arial, sans-serif; font-size:17px; line-height:1.5em; " _label="TXT_CONTACT_NUMBER">0&zwj;8&zwj;0&zwj;8&nbsp;2&zwj;2&zwj;3&nbsp;2&zwj;7&zwj;2&zwj;9</a> and quote <strong>CAR95</strong> to&nbsp;book. 
 </td>
 </tr>
 <tr>
@@ -602,7 +631,7 @@ There’s still time to take advantage of this special offer across our entire h
 <td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
 </tr>
 <tr>
-<td class="pl-sm-20 pr-sm-20 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.2em; font-size:24px;  font-weight:700; text-align: center; color:#1e3282; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 20px; padding-right: 20px;" >Where can we take you? </td>
+<td class="pl-sm-20 pr-sm-20 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.2em; font-size:26px;  font-weight:700; text-align: center; color:#1e3282; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 20px; padding-right: 20px;" >Where can we take you? </td>
 </tr>
 <tr>
 <td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
@@ -1006,7 +1035,11 @@ There’s still time to take advantage of this special offer across our entire h
 <tr>
 <td align="left" valign="top"><table role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" class="fullWidth" style="padding: 5px 0px 5px 0px;">
 <tr>
-<td  align="center" style="font-family: 'Ambit', arial, sans-serif; font-size:14px; line-height:1.2em;  text-align:center; font-weight:400; color:#FFFFFF; padding-left: 20px; padding-right:20px;" >Update your contact preferences or unsubscribe <%@ include view='TR_Hosted_Hotels_Unsub_Bottom_EIE_NEW_FOOTER' %>
+<td  align="center" style="font-family: 'Ambit', arial, sans-serif; font-size:14px; line-height:1.2em;  text-align:center; font-weight:400; color:#FFFFFF; padding-left: 20px; padding-right:20px;" >Update your contact preferences or unsubscribe <% if (targetData.emailOnlyFlag == "1") { %>
+	<%@ include view='TR_Holiday_Unsub_Bottom_EIE_NEW_FOOTER' %>
+	<% } else { %>
+	<%@ include view='TR_Hosted_Hotels_Unsub_Bottom_EIE_NEW_FOOTER' %>
+	<% } %>
 </td>
 </tr>
 <tr>
@@ -1046,7 +1079,8 @@ There’s still time to take advantage of this special offer across our entire h
 <td><table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
 <td width="30%" align="left" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"><%@ include view='TR_Footer_Links_EIE' %></td>
-<td width="30%" align="right" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"> Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga </td>
+<td width="30%" align="right" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"> Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga<br>
+0&zwj;1&zwj;9&zwj;2&zwj;5&zwj;5 </td>
 </tr>
 </table></td>
 </tr>
