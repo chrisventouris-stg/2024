@@ -115,6 +115,11 @@ width: 100%!important;
 .displayBlock {
 display: block!important;
 }
+	
+.color-switch-zig-zag{
+		bgcolor: #EAF6F6 !important;
+	background-color: #EAF6F6 !important;
+}
 
 .bnr-image{
 border-top-left-radius: 10px !important;
@@ -122,7 +127,24 @@ border-top-right-radius: 10px !important;
 border-bottom-left-radius: 0px !important;
 border-bottom-right-radius: 0px !important;	
 }
+
+.bnr-br-bl{
+	border-bottom-left-radius: 10px !important;
+}
+.bnr-br-br{
+	border-bottom-right-radius: 10px !important;
+}
 	
+.bnr-br-tl{
+	border-top-left-radius: 10px !important;
+}
+.bnr-br-tr{
+	border-top-right-radius: 10px !important;
+}
+.bnr-br-top{
+border-top-left-radius: 10px !important;
+border-top-right-radius: 10px !important;
+}
 .bnr-br-bot{
 border-bottom-left-radius: 10px !important;
 border-bottom-right-radius: 10px !important;
@@ -653,16 +675,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit molestia
 </tr>
 </table>
 
+	
+	
+	
+
 
 
 <!-- 2 COL POD -->
 <table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#EAF6F6">
-<tr>
-<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
-</tr>
-<tr>
-<td class="pl-sm-20 pr-sm-20 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:26px;  font-weight:700; text-align: center; color:#1e3282; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 40px; padding-right: 40px;" >Hotel stays</td>
-</tr>
+
 <tr>
 <td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
 </tr>
@@ -672,71 +693,30 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit molestia
 <tr> 
 <!-- POD1 -->
 <!-- POD1 -->
-<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<td valign="center" class="displayBlock fullWidth" width="270" align="center" bgcolor="#EAF6F6" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
 <tr>
-<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/lanzarote/hotel-costa-calero-thalasso-spa?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/a33c8e75bf33d4a8ffdbf16770495ef03958a1d586a24c2c28e2f1fe13d5668d.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"></a></td>
+<td align="center" class="fullWidth"><a href="https://holiday.saga.co.uk/holidays/europe/cyprus/alexander-the-great-beach-hotel?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth bnr-br-tr" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/26d30132092104c9eff2c39ce110a763de489a6306131c43dbf036ef0e8120a2.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 0px;"></a></td>
 </tr>
 <tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0</td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-30 fz-24" height="48" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left: 8px; padding-right:8px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF" >Hotel Costa Calero Thalasso &amp; Spa</td>
-</tr>
-<tr>
-<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:15px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF">Puerto Calero, Lanzarote</td>
+<td class="heightAuto px-sm-40 pxm-sm-30 fz-17 bnr-br-bot-0"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none; border-bottom-left-radius: 10px;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0
+</td>
 </tr>
 
-<tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   valign="top" align="center" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height: exactly; text-align:center; font-weight:normal; padding-bottom: 16px; padding-left:8px; padding-right: 8px; padding-top: 0px;  mso-line-height-rule:exactly;  mso-hyphenate:none;" bgcolor="#FFFFFF" >This peaceful hotel’s four pools and landscaped gardens are ideal for enjoying Lanzarote’s warm&nbsp;weather.</td>
-</tr>
-<!-- PRICE END -->
-
-<!--					1	-->
-<tr>
-<td class="pl-sm-20 pr-sm-20" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">SAVE &pound;1&zwj;3&zwj;0&sup1;</td>
-</tr>
-<!--					1	-->
-<tr>
-<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 8px; padding-right: 8px;" bgcolor="#FFFFFF"><strong>7&zwj; nights all-inclusive<br>
-<span style="font-weight: 400;">from </span>&pound;1,&zwj;0&zwj;7&zwj;5pp</strong>&nbsp;<s>&pound;1,&zwj;2&zwj;0&zwj;5pp</s></td>
-</tr>
-<tr>
-<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:14px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px;" bgcolor="#FFFFFF">Departs 9 D&zwj;e&zwj;c&zwj;e&zwj;m&zwj;b&zwj;e&zwj;r 2&zwj;0&zwj;2&zwj;5</td>
-</tr>
-
-<!--			CTA		-->
-<tr>
-<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/lanzarote/hotel-costa-calero-thalasso-spa?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
-</table></td>
-</tr>
 <!--			CTA		-->
 </table></td>
 
 <!-- SPACER -->
-<td class="displayBlock pt-sm-10" width="20" align="center">&nbsp;</td>
+
 
 <!-- POD2 -->
-<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<td valign="center" class="displayBlock fullWidth color-switch-zig-zag" width="270" align="center" bgcolor="#FFFFFF" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" >
 
 <tr>
-<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/cyprus/alexander-the-great-beach-hotel?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD4" target="_blank" _label="POD4"><img width="270" class="fullWidth" src="https://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/a2bed4951191b5d6949162cf1723c477c6de52b93a4710c45176c5a3cfa5e715.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"></a></td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0</td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-30 fz-24" height="48" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:8px; padding-right: 8px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF" >Alexander The Great Beach Hotel</td>
+<td class="heightAuto px-sm-30 fz-24" height="48" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:8px; padding-right: 8px; vertical-align: top; mso-hyphenate:none; border-top-left-radius: 0px; border-top-right-radius: 10px;" bgcolor="#FFFFFF" >Alexander The Great Beach Hotel</td>
 </tr>
 <tr>
 <td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF" >Paphos, Cyprus</td>
 </tr>
-
-
-<tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   valign="top" align="center" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height: exactly; text-align:center; font-weight:normal; padding-bottom: 16px; padding-left:8px; padding-right: 8px; padding-top: 0px;  mso-line-height-rule:exactly;  mso-hyphenate:none;" bgcolor="#FFFFFF" >One of our most highly rated beachfront hotels, you can expect great food, exceptional service and superb entertainment.</td>
-</tr>
-
 <tr>
 <td class="pl-sm-20 pr-sm-20" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">SAVE &pound;&zwj;X&zwj;X&sup1;</td>
 </tr>
@@ -750,7 +730,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit molestia
 </tr>
 <!--			CTA		-->
 <tr>
-<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<td class="px-sm-20 bnr-br-bl"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
 <th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/cyprus/alexander-the-great-beach-hotel?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
 </table></td>
 </tr>
@@ -761,34 +741,95 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit molestia
 </tr>
 <!--POD END--> 	
 <tr>
-<td class="pt-sm-30" style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
 </tr>
+<!--POD START-->
+<tr>
+<td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" dir="rtl">
+<tr> 
+<!-- POD1 -->
+<!-- POD1 -->
+<td valign="center" class="displayBlock fullWidth" width="270" align="center" bgcolor="#EAF6F6" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<tr>
+<td align="center" class="fullWidth"><a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/lanzarote/hotel-costa-calero-thalasso-spa?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth bnr-br-top" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8962dde7b42cca6058527818a5c9f6b2c285fd3857f1aa2b8d14eb15a72a1f3f.jpg" alt="" style="border-top-right-radius: 10px; border-top-left-radius: 0px;"></a></td>
+</tr>
+<tr>
+<td class="heightAuto px-sm-40 pxm-sm-30 fz-17 bnr-br-bot-0"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none; border-bottom-right-radius: 10px;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0
+</td>
+</tr>
+
+<!--			CTA		-->
+</table></td>
+
+<!-- SPACER -->
+
+
+<!-- POD2 -->
+<td valign="center" class="displayBlock fullWidth color-switch-zig-zag bnr-br-br" width="270" align="center" bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" >
+
+<tr>
+<td class="heightAuto px-sm-30 fz-24" height="48" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:8px; padding-right: 8px; vertical-align: top; mso-hyphenate:none; border-top-right-radius: 0px; border-top-left-radius: 0px;" bgcolor="#FFFFFF" >Hotel Costa Calero Thalasso &amp; Spa</td>
+</tr>
+<tr>
+<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF" >Puerto Calero, Lanzarote</td>
+</tr>
+<tr>
+<td class="pl-sm-20 pr-sm-20" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">SAVE &pound;&zwj;1&zwj;3&zwj;0&sup1;</td>
+</tr>
+<!--					1	-->
+<tr>
+<td dir="ltr" class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 8px; padding-right: 8px;" bgcolor="#FFFFFF"><strong>7 nights all-inclusive<br>
+<span style="font-weight: 400;">from </span>&pound;1,&zwj;0&zwj;7&zwj;5pp</strong>&nbsp;<s>&pound;1,&zwj;2&zwj;0&zwj;5pp</s></td>
+</tr>
+<tr>
+<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:14px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px;" bgcolor="#FFFFFF">Departs 9 December 2&zwj;0&zwj;2&zwj;5</td>
+</tr>
+<!--			CTA		-->
+<tr>
+<td class="px-sm-20 bnr-br-bot"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/lanzarote/hotel-costa-calero-thalasso-spa?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
+</table></td>
+</tr>
+<!--			CTA		-->
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!--POD END--> 	
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
+</tr>
+
 <!--POD START-->
 <tr>
 <td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr> 
 <!-- POD1 -->
 <!-- POD1 -->
-<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<td valign="center" class="displayBlock fullWidth" width="270" align="center" bgcolor="#EAF6F6" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
 <tr>
-<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/spain/costa-blanca/hotel-port-denia?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" class="fullWidth" src="https://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/f9cf6acc4d44ed6012fce968306711636b263f350460874fcfa126978842b7e7.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"></a></td>
+<td align="center" class="fullWidth"><a href="https://holiday.saga.co.uk/holidays/europe/spain/costa-blanca/hotel-port-denia?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth bnr-br-tr" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/f69f2ac69a54b207c9b927211a90c36b0be4de15e759363b7a1b4b7cbe0bd45f.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 0px;"></a></td>
 </tr>
 <tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0</td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-30 fz-24"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left: 4px; padding-right:4px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF">Hotel Port Denia</td>
-</tr>
-<tr>
-<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF">Costa Blanca, Spain</td>
-</tr>
-
-<tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17" height="68"  valign="top" align="center" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height: exactly; text-align:center; font-weight:normal; padding-bottom: 16px; padding-left:8px; padding-right: 8px; padding-top: 0px;  mso-line-height-rule:exactly;  mso-hyphenate:none;" bgcolor="#FFFFFF">
-A Saga customer favourite, this is a sociable hotel that’s really well&nbsp;located.
+<td class="heightAuto px-sm-40 pxm-sm-30 fz-17 bnr-br-bot-0"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none; border-bottom-left-radius: 10px;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0
 </td>
 </tr>
-<!-- PRICE END -->
+
+<!--			CTA		-->
+</table></td>
+
+<!-- SPACER -->
+
+
+<!-- POD2 -->
+<td valign="center" class="displayBlock fullWidth color-switch-zig-zag" width="270" align="center" bgcolor="#FFFFFF" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" >
+
+<tr>
+<td class="heightAuto px-sm-30 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:8px; padding-right: 8px; vertical-align: top; mso-hyphenate:none; border-top-left-radius: 0px; border-top-right-radius: 10px;" bgcolor="#FFFFFF" >Hotel Port Denia</td>
+</tr>
+<tr>
+<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF" >Costa Blanca, Spain</td>
+</tr>
 <tr>
 <td class="pl-sm-20 pr-sm-20" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">SAVE &pound;&zwj;X&zwj;X&sup1;</td>
 </tr>
@@ -802,49 +843,8 @@ A Saga customer favourite, this is a sociable hotel that’s really well&nbsp;lo
 </tr>
 <!--			CTA		-->
 <tr>
-<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<td class="px-sm-20 bnr-br-bl"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
 <th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/spain/costa-blanca/hotel-port-denia?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
-</table></td>
-</tr>
-<!--			CTA		-->
-</table></td>
-
-<!-- SPACER -->
-<td class="displayBlock pt-sm-10" width="20" align="center">&nbsp;</td>
-
-<!-- POD2 -->
-<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
-
-<tr>
-<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/spain/costa-blanca/hotel-kaktus-albir?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD4" target="_blank" _label="POD4"><img width="270" class="fullWidth" src="https://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/29c98128e63b532d60753f2188bd5448c4727dbd57f767482289a5f308d3056c.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"></a></td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0</td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-30 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:4px; padding-right: 4px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF">Hotel Kaktus Albir</td>
-</tr>
-<tr>
-<td class="heightAuto"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF">Costa Blanca, Spain</td>
-</tr>
-
-<tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17" height="68"  valign="top" align="center" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height: exactly; text-align:center; font-weight:normal; padding-bottom: 16px; padding-left:8px; padding-right: 8px; padding-top: 0px;  mso-line-height-rule:exactly;  mso-hyphenate:none;" bgcolor="#FFFFFF">This hotel has a rooftop plunge pool and views of the rugged Spanish coastline.</td>
-</tr>
-<tr>
-<td class="pl-sm-20 pr-sm-20 hide-sm" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">&nbsp;</td>
-</tr>
-<tr>
-<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 8px; padding-right: 8px;" bgcolor="#FFFFFF"><strong>7&zwj; nights all-inclusive<br>
-<span style="font-weight: 400;">from </span>&pound;7&zwj;2&zwj;5&zwj;pp</strong></td>
-</tr>
-<tr>
-<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:14px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px;" bgcolor="#FFFFFF">Departs XX X 2&zwj;0&zwj;2&zwj;6</td>
-</tr>
-<!--			CTA		-->
-<tr>
-<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/spain/costa-blanca/hotel-kaktus-albir?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
 </table></td>
 </tr>
 <!--			CTA		-->
@@ -854,36 +854,96 @@ A Saga customer favourite, this is a sociable hotel that’s really well&nbsp;lo
 </tr>
 <!--POD END--> 	
 <tr>
-<td class="pt-sm-30" style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
 </tr>
+<!--POD START-->
+<tr>
+<td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" dir="rtl">
+<tr> 
+<!-- POD1 -->
+<!-- POD1 -->
+<td valign="center" class="displayBlock fullWidth" width="270" align="center" bgcolor="#EAF6F6" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<tr>
+<td align="center" class="fullWidth"><a href="https://holiday.saga.co.uk/holidays/europe/spain/costa-blanca/hotel-kaktus-albir?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth bnr-br-top" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/0e67dd481b6ae216d33b8589ae26d254e3fdc0c21581d8a136b3061fb759ec3b.jpg" alt="" style="border-top-right-radius: 10px; border-top-left-radius: 0px;"></a></td>
+</tr>
+<tr>
+<td class="heightAuto px-sm-40 pxm-sm-30 fz-17 bnr-br-bot-0"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none; border-bottom-right-radius: 10px;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0
+</td>
+</tr>
+
+<!--			CTA		-->
+</table></td>
+
+<!-- SPACER -->
+
+
+<!-- POD2 -->
+<td valign="center" class="displayBlock fullWidth color-switch-zig-zag bnr-br-br" width="270" align="center" bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" >
+
+<tr>
+<td class="heightAuto px-sm-30 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:8px; padding-right: 8px; vertical-align: top; mso-hyphenate:none; border-top-right-radius: 0px; border-top-left-radius: 0px;" bgcolor="#FFFFFF" >Hotel Kaktus Albir</td>
+</tr>
+<tr>
+<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF" >Costa Blanca, Spain</td>
+</tr>
+
+<!--					1	-->
+<tr>
+<td dir="ltr" class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 8px; padding-right: 8px;" bgcolor="#FFFFFF"><strong>7&zwj; nights all-inclusive<br>
+<span style="font-weight: 400;">from </span>&pound;7&zwj;2&zwj;5&zwj;pp</strong></td>
+</tr>
+<tr>
+<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:14px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px;" bgcolor="#FFFFFF">Departs XX X 2&zwj;0&zwj;2&zwj;5</td>
+</tr>
+<!--			CTA		-->
+<tr>
+<td class="px-sm-20 bnr-br-bot"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/spain/costa-blanca/hotel-kaktus-albir?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
+</table></td>
+</tr>
+<!--			CTA		-->
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!--POD END--> 	
+
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
+</tr>
+
 <!--POD START-->
 <tr>
 <td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr> 
 <!-- POD1 -->
 <!-- POD1 -->
-<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<td valign="center" class="displayBlock fullWidth" width="270" align="center" bgcolor="#EAF6F6" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
 <tr>
-<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/tenerife/hotel-best-semiramis?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" class="fullWidth" src="https://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/e55807c0ab9d7697e1a2e16a7b08b942f4cc724df989d5aba5d61e677f73f057.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"></a></td>
+<td align="center" class="fullWidth"><a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/tenerife/hotel-best-semiramis?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth bnr-br-tr" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/ce995fc9e487002691e06742b0a1150a1f8dc2837267f00360779639867db52c.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 0px;"></a></td>
 </tr>
 <tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0</td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-30 fz-24"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left: 4px; padding-right:4px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF">Best Hotel Semiramis</td>
-</tr>
-<tr>
-<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF">Puerto de la Cruz, Tenerife</td>
-</tr>
-
-<tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17" height="68"  valign="top" align="center" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height: exactly; text-align:center; font-weight:normal; padding-bottom: 16px; padding-left:8px; padding-right: 8px; padding-top: 0px;  mso-line-height-rule:exactly;  mso-hyphenate:none;" bgcolor="#FFFFFF">
-Enjoy uninterrupted views over Tenerife’s rugged north coast from this clifftop&nbsp;hotel.
+<td class="heightAuto px-sm-40 pxm-sm-30 fz-17 bnr-br-bot-0"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none; border-bottom-left-radius: 10px;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0
 </td>
 </tr>
-<!-- PRICE END -->
+
+<!--			CTA		-->
+</table></td>
+
+<!-- SPACER -->
+
+
+<!-- POD2 -->
+<td valign="center" class="displayBlock fullWidth color-switch-zig-zag" width="270" align="center" bgcolor="#FFFFFF" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" >
+
 <tr>
-<td class="pl-sm-20 pr-sm-20" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">SAVE &pound;8&zwj;0&sup1;</td>
+<td class="heightAuto px-sm-30 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:8px; padding-right: 8px; vertical-align: top; mso-hyphenate:none; border-top-left-radius: 0px; border-top-right-radius: 10px;" bgcolor="#FFFFFF" >Best Hotel Semiramis</td>
+</tr>
+<tr>
+<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF" >Puerto de la Cruz, Tenerife</td>
+</tr>
+<tr>
+<td class="pl-sm-20 pr-sm-20" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">SAVE &pound;&zwj;X&zwj;X&sup1;</td>
 </tr>
 <!--					1	-->
 <tr>
@@ -895,48 +955,61 @@ Enjoy uninterrupted views over Tenerife’s rugged north coast from this cliffto
 </tr>
 <!--			CTA		-->
 <tr>
-<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<td class="px-sm-20 bnr-br-bl"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
 <th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/tenerife/hotel-best-semiramis?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
 </table></td>
 </tr>
 <!--			CTA		-->
 </table></td>
+</tr>
+</table></td>
+</tr>
+<!--POD END--> 	
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
+</tr>
+<!--POD START-->
+<tr>
+<td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" dir="rtl">
+<tr> 
+<!-- POD1 -->
+<!-- POD1 -->
+<td valign="center" class="displayBlock fullWidth" width="270" align="center" bgcolor="#EAF6F6" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<tr>
+<td align="center" class="fullWidth"><a href="https://holiday.saga.co.uk/holidays/europe/portugal/madeira/funchal/enotel-lido?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth bnr-br-top" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/5014855a4dda0347a85ecab6a3fa6001512cc5508caa39f2093ad95a8d998241.jpg" alt="" style="border-top-right-radius: 10px; border-top-left-radius: 0px;"></a></td>
+</tr>
+<tr>
+<td class="heightAuto px-sm-40 pxm-sm-30 fz-17 bnr-br-bot-0"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none; border-bottom-right-radius: 10px;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0
+</td>
+</tr>
+
+<!--			CTA		-->
+</table></td>
 
 <!-- SPACER -->
-<td class="displayBlock pt-sm-10" width="20" align="center">&nbsp;</td>
+
 
 <!-- POD2 -->
-<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<td valign="center" class="displayBlock fullWidth color-switch-zig-zag bnr-br-br" width="270" align="center" bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" >
 
 <tr>
-<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/portugal/madeira/funchal/enotel-lido?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD4" target="_blank" _label="POD4"><img width="270" class="fullWidth" src="https://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/4dbbb8712eefc9e0ed1ced9ff93c5515bc5bdd764be3aeae6b2675222e0cdcc7.jpg" alt="" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"></a></td>
+<td class="heightAuto px-sm-30 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:8px; padding-right: 8px; vertical-align: top; mso-hyphenate:none; border-top-right-radius: 0px; border-top-left-radius: 0px;" bgcolor="#FFFFFF" >Enotel Lido</td>
 </tr>
 <tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:16px; font-weight:bold; text-align: center; color:#FFFFFF; padding-top:12px; padding-bottom:12px; padding-left: 20px; padding-right: 20px; vertical-align: top; mso-hyphenate:none;" bgcolor="#fa8f3a" >Save an extra &pound;&zwj;5&zwj;0pp when you use code&nbsp;S&zwj;A&zwj;V&zwj;E&zwj;5&zwj;0</td>
-</tr>
-<tr>
-<td class="heightAuto px-sm-30 fz-24" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: center; color:#1e3282; padding-top:20px; padding-bottom:4px; padding-left:4px; padding-right: 4px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF">Enotel Lido</td>
-</tr>
-<tr>
-<td class="heightAuto"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF">Funchal, Madeira</td>
+<td class="heightAuto " align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:15px; font-weight:400; text-align: center;  padding-top:0px; padding-bottom:16px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; color:#1e3282;" bgcolor="#FFFFFF" >Funchal, Madeira</td>
 </tr>
 
+<!--					1	-->
 <tr>
-<td class="heightAuto px-sm-40 pxm-sm-30 fz-17" height="68"  valign="top" align="center" style="font-family: 'Ambit', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height: exactly; text-align:center; font-weight:normal; padding-bottom: 16px; padding-left:8px; padding-right: 8px; padding-top: 0px;  mso-line-height-rule:exactly;  mso-hyphenate:none;" bgcolor="#FFFFFF">Rooms here come with a spectacular view, thanks to the seafront location.</td>
+<td dir="ltr" class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 8px; padding-right: 8px;" bgcolor="#FFFFFF"><strong>7&zwj; nights all-inclusive<br>
+<span style="font-weight: 400;">from </span>&pound;7&zwj;2&zwj;5&zwj;pp</strong></td>
 </tr>
 <tr>
-<td class="pl-sm-20 pr-sm-20" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px; color:#fa8f3a;" bgcolor="#FFFFFF">SAVE &pound;1&zwj;0&zwj;0&sup1;</td>
-</tr>
-<tr>
-<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:0px; mso-hyphenate: none; padding-left: 8px; padding-right: 8px;" bgcolor="#FFFFFF"><strong>7&zwj; nights all-inclusive<br>
-<span style="font-weight: 400;">from </span>&pound;1,&zwj;1&zwj;7&zwj;5pp</strong>&nbsp;<s>&pound;1,&zwj;2&zwj;7&zwj;5pp</s></td>
-</tr>
-<tr>
-<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:14px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px;" bgcolor="#FFFFFF">Departs XX X 2&zwj;0&zwj;2&zwj;6</td>
+<td class="" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:14px;  font-weight:400; text-align: center; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 0px; padding-right: 0px;" bgcolor="#FFFFFF">Departs XX X 2&zwj;0&zwj;2&zwj;5</td>
 </tr>
 <!--			CTA		-->
 <tr>
-<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<td class="px-sm-20 bnr-br-bot"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
 <th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/portugal/madeira/funchal/enotel-lido?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
 </table></td>
 </tr>
@@ -948,6 +1021,7 @@ Enjoy uninterrupted views over Tenerife’s rugged north coast from this cliffto
 <!--POD END--> 	
 
 
+
 <tr>
 <td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
 </tr>
@@ -956,6 +1030,13 @@ Enjoy uninterrupted views over Tenerife’s rugged north coast from this cliffto
 </table>
 <!-- 2 COL POD --> 	
 
+<!-- SPACER Start -->
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table>
+<!-- SPACER END --> 
 
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
