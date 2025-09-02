@@ -111,11 +111,44 @@ img {
 .displayBlock {
     display: block!important;
 }
+	
+	.nav2-width{
+		width: 200px !important;
+	}
 .bnr-image {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
+}
+.bnr-br-bl{
+	border-bottom-left-radius: 10px !important;
+}
+.bnr-br-br{
+	border-bottom-right-radius: 10px !important;
+}
+	
+.bnr-br-tl{
+	border-top-left-radius: 10px !important;
+}
+.bnr-br-tr{
+	border-top-right-radius: 10px !important;
+}
+.bnr-br-top{
+border-top-left-radius: 10px !important;
+border-top-right-radius: 10px !important;
+}
+.bnr-br-bot{
+border-bottom-left-radius: 10px !important;
+border-bottom-right-radius: 10px !important;
+}
+.bnr-br-bot-0{
+border-bottom-left-radius: 0px !important;
+border-bottom-right-radius: 0px !important;
+}
+.bnr-br-top-0{
+border-top-left-radius: 0px !important;
+border-top-right-radius: 0px !important;
 }
 .desktop-image {
     display: none !important; /* Hide desktop image on mobile */
@@ -316,6 +349,9 @@ img {
 .pb-sm-10 {
     padding-bottom: 10px!important;
 }
+.pb-sm-4 {
+    padding-bottom: 4px!important;
+}
 .pb-sm-16 {
     padding-bottom: 16px!important;
 }
@@ -481,6 +517,10 @@ img {
     font-size: 26px !important;
     line-height: 30px !important;
 }
+	
+	.displayBlockMob{
+		display: block!important;
+	}
 }
 </style>
 </head>
@@ -543,47 +583,6 @@ img {
   <!--  SPACER  -->
 </table>
 <!--NAV_LOGO-->
-
-<!--NAV_LOGO2-->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation"  >
-  <!--  SPACER  -->
-  <tr>
-    <td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:6px;">&nbsp;</td>
-  </tr>
-  <!--  SPACER  -->
-  <tr>
-    <td><table width="100%" height="auto" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
-        <tr>
-          <td>
-			  <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
-				  <tr>
-					<td width="100%"  align="center" style="padding-bottom: 8px;"><a href="https://holiday.saga.co.uk/?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|header_logo|image" target="_blank" _label="NAV_SAGA"> <img class="logo" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/306e9910b0c76b1687f2724bd60c58b55ef8fb0305cf6afa9c0f23d778fe98b5.png" alt="SAGA" width="126" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align: center;" > </a></td>
-				  </tr>
-				  <tr>
-					<td class="fz-16 " style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; color:#1e3282; line-height: 1.2em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-bottom: 0px; text-transform: uppercase;"><a href="tel:08083047870" style="color:#1e3282; text-decoration: none; font-weight:400;">0808&nbsp;304&nbsp;7870</a></td>
-				  </tr>
-            </table>
-		  </td>
-			<td>
-			  <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
-				  <tr>
-					  <td class="nav-mob" width="200" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center;"><a href="https://holiday.saga.co.uk/holidays/holiday-types/group-tours/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|ET" _label="NAV_ET" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;">Escorted tours</a></td>
-				  </tr>
-					  <td class="nav-mob" width="200" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center;"><a href="https://holiday.saga.co.uk/holidays/holiday-types/hotel?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|HH" _label="NAV_HH" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;">Hotel stays</a></td></tr>
-					  <td class="nav-mob" width="200" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center;"><a href="https://travel.saga.co.uk/cruises/river.aspx?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|RC" _label="NAV_RC" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;">River cruises</a></td></tr>
-				  </tr>
-            </table>
-		  </td>
-        </tr>
-      </table></td>
-  </tr>
-  <!--  SPACER  -->
-  <tr>
-    <td class="pt-sm-20" style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
-  </tr>
-  <!--  SPACER  -->
-</table>
-<!--NAV_LOGO2-->
 <!-- NAV LINKS -->
 <table class="full-width-sm" align="center" bgcolor="#E0F1F1"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; border-top-left-radius: 6px; border-top-right-radius: 6px;">
   <!--  SPACER  -->
@@ -626,6 +625,93 @@ img {
   </tr>
 </table>
 <!-- HERO --> 
+<!-- SPACER Start -->
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" align="center" width="600" style="border-collapse: collapse;">
+  <tr>
+    <td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+  </tr>
+</table>
+<!-- SPACER END --> 
+<!--LOGO_NAV_V2-->
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation"  >
+  <!--  SPACER  -->
+  <tr>
+    <td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:6px;">&nbsp;</td>
+  </tr>
+  <!--  SPACER  -->
+  <tr>
+    <td><table width="100%" height="auto" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+        <tr>
+          <td class="displayBlock align-sm-center " style="vertical-align: middle;">
+			  <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+				  <tr>
+					<td width="100%"  align="center" style="padding-bottom: 8px;"><a href="https://holiday.saga.co.uk/?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|header_logo|image" target="_blank" _label="NAV_SAGA"> <img class="logo" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/306e9910b0c76b1687f2724bd60c58b55ef8fb0305cf6afa9c0f23d778fe98b5.png" alt="SAGA" width="126" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align: center;" > </a></td>
+				  </tr>
+				  <tr>
+					<td class="fz-16 " style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; color:#1e3282; line-height: 1.2em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-bottom: 0px; text-transform: uppercase;"><a href="tel:08083047870" style="color:#1e3282; text-decoration: none; font-weight:400;">0808&nbsp;304&nbsp;7870</a></td>
+				  </tr>
+            </table>
+		  </td>
+		<td class="displayBlock align-sm-center pb-sm-4" style="vertical-align: middle;">
+			  <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+				  <tr>
+
+					<td>&nbsp;</td>
+				  </tr>
+            </table>
+		  </td>
+			<td align="center" class="displayBlock fullWidth align-sm-center bnr-br-top" bgcolor="#E0F1F1">
+			  <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+					<tr>
+						
+						<td bgcolor="#E0F1F1" class="bnr-br-tl"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px;" ><a href="https://holiday.saga.co.uk/holidays/holiday-types/group-tours/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|ET" _label="NAV_ET" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400; " >Escorted tours</a></td></tr></table></td>
+						
+						<td bgcolor="#E0F1F1"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px;" bgcolor="#E0F1F1"><a href="https://holiday.saga.co.uk/holidays/holiday-types/hotel?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|HH" _label="NAV_HH" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;" >Hotel stays</a></td></tr></table></td>
+						
+						<td bgcolor="#E0F1F1" class="bnr-br-tr"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px ;" ><a href="https://travel.saga.co.uk/cruises/river.aspx?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|RC" _label="NAV_RC" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;" >River cruises</a></td></tr></table></td>
+						
+						
+						
+					  
+
+
+					  
+
+					  
+				  </tr>
+				  
+            </table>
+		  </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:20px;"></td>
+  </tr>
+</table>
+<!--LOGO_NAV_V2-->
+
+<!-- HERO -->
+<table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
+  <tr>
+    <td  align="center"><table cellpadding="0" cellspacing="0" role="presentation" bgcolor="" width="100%" style="border-collapse: collapse;">
+        <tr>
+          <td  align="center"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+              <tr>
+                <th align="center" style="font-size:1px; line-height: 1px; vertical-align:top;"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+                    <tr>
+                      <td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/new-holidays?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img src="https://placehold.co/1200x800/png" alt="EXCLUSIVE PREVIEW. Launching a brand new collection of holidays for 2026. Save up to 950 GBP, offers end Friday" width="600" height="auto" class="fullWidth"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+                    </tr>
+                  </table></th>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!-- HERO --> 
+
+
 
 <!--  TITLE - ACCENT	-->
 <table class="full-width-sm" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#FFFFFF"  style="border-collapse: collapse; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; ">
