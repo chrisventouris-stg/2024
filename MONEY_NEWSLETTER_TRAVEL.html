@@ -1390,11 +1390,12 @@ YOU TO THE WHOLE FAMILY</td>
 <tr>
 <td style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 28px; mso-line-height: exactly; text-align:center; font-weight:normal; color:#ffffff;">Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga <br>
 <a href="https://www.saga.co.uk/privacy-policy.aspx"  style="color:#ffffff; font-weight:normal; text-decoration: underline;">Privacy policy</a> | <a href="https://travel.saga.co.uk/contact-us.aspx" style="color:#ffffff; font-weight:normal; text-decoration: underline;">Contact us</a> |
-<% if (message.segmentCode.indexOf('_EmailOnly') != -1) { %>
-<%@ include view='TR_Holiday_Unsub_Bottom_EIE_WHITE' %>
-<% } else { %>
-<%@ include view='TR_Travel_Unsub_Bottom_EIE_WHITE' %>
-<% } %></td>
+<% if (message.segmentCode.indexOf('_EmailOnly') != -1) { %>
+<%@ include view='TR_Holiday_Unsub_Bottom_EIE_WHITE' %>
+<% } else { %>
+<%@ include view='TR_Travel_Unsub_Bottom_EIE_WHITE' %>
+<% } %>
+</td>
 </tr>
 <tr>
 <td style="font-size: 1px; line-height:1px; mso-line-height-rule: exactly; padding-top:40px;">&nbsp;</td>
