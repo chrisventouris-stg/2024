@@ -481,6 +481,18 @@ line-height: 1.1!important;
 }
 }
 
+@media only screen and (max-width: 640px) {
+.mainHeading {
+font-size: 22px !important;
+line-height: 1.4em !important;
+}
+.mainSubheading {
+font-size: 24px !important;
+line-height: 1.3em !important;
+
+}
+}
+	
 @media only screen and (max-width: 480px) {
 .full-width-sm {
 display: table!important;
@@ -557,6 +569,10 @@ line-height: 1.1em !important;
 .ptb-sm-5 {
 padding-top: 50!important;
 padding-bottom: 5!important;
+}
+.pxm-sm-10 {
+padding-right: 10px!important;
+padding-left: 10px!important;
 }
 .pxm-sm-20 {
 padding-right: 20px!important;
@@ -693,14 +709,14 @@ display: block!important;
 <td  style="line-height:1px; font-size:1px; padding-top:34px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="px-sm-20 fz-22" style="font-family: 'Ambit', Arial, sans-serif; font-size: 28px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-left:90px; padding-right: 90px; padding-bottom: 0px; ">THERE'S NOT LONG LEFT TO</td>
+<td class="px-sm-20 mainHeading" style="font-family: 'Ambit', Arial, sans-serif; font-size: 28px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-left:90px; padding-right: 90px; padding-bottom: 0px; ">THERE'S NOT LONG LEFT&nbsp;TO</td>
 </tr>
 	
 <tr>
 <td style="line-height:1px; font-size:1px; padding-top:4px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="px-sm-20 fz-24" style="font-family: 'Ambit', Arial, sans-serif; font-size: 32px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:700; padding-top: 0px; mso-hyphenate: none; padding-left: 70px; padding-right: 70px; padding-bottom: 0px; ">SAVE UP TO&nbsp;£800PP IN OUR WINTER HOLIDAY&nbsp;SALE</td>
+<td class="px-sm-40 pxm-sm-10 mainSubheading" style="font-family: 'Ambit', Arial, sans-serif; font-size: 32px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:700; padding-top: 0px; mso-hyphenate: none; padding-left: 70px; padding-right: 70px; padding-bottom: 0px; ">SAVE UP TO&nbsp;£800PP IN OUR WINTER HOLIDAY&nbsp;SALE</td>
 </tr>
 	
 <tr>
@@ -923,7 +939,7 @@ Book during our Winter Holiday Sale and enjoy savings of 10% or more off any esc
 <!-- Desktop Image -->
 <a href="https://holiday.saga.co.uk/holidays/asia/india/serene-kerala-a-tranquil-journey-through-nature-and-culture?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth desktop-image bnr-br-tr bnr-br-bl-0 bnr-br-br-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/4f6de30dc24901d975840ded3a257e65bbb14a3165fead0bdd1b4016a2a9997a.jpg" alt="" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 0px;"></a>
 <!-- Mobile Image -->
-<a href="https://holiday.saga.co.uk/holidays/asia/india/serene-kerala-a-tranquil-journey-through-nature-and-culture?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth mobile-image bnr-br-tr bnr-br-bl-0 bnr-br-br-0 bnr-br-tr-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/51db3154b0044aa7e70000a4d4cf11b003569691c7d67d1ac4e7f6fb85028749.jpg" alt="" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 0px;"></a>
+<a href="https://holiday.saga.co.uk/holidays/asia/india/serene-kerala-a-tranquil-journey-through-nature-and-culture?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" height="auto" class="fullWidth mobile-image bnr-br-tr bnr-br-bl-0 bnr-br-br-0 bnr-br-tr-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/51db3154b0044aa7e70000a4d4cf11b003569691c7d67d1ac4e7f6fb85028749.jpg" alt="" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 0px; display: none;"></a>
 </td>
 <!--<![endif]-->
 <!--[if mso]>
@@ -989,7 +1005,7 @@ Book during our Winter Holiday Sale and enjoy savings of 10% or more off any esc
 <!-- Desktop Image -->
 <a href="https://holiday.saga.co.uk/holidays/africa/egypt/magic-of-the-nile?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD4"><img width="270" height="auto" class="fullWidth desktop-image bnr-br-top bnr-br-br-0 bnr-br-bl-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/1b57b3cb17e7f3f34d800f5de067cb5babc2a18099915b023687d490bbeab0cb.jpg" alt="" style="border-top-right-radius: 0px; border-top-left-radius: 0px; border-bottom-right-radius: 10px;"></a>
 <!-- Mobile Image -->
-<a href="https://holiday.saga.co.uk/holidays/africa/egypt/magic-of-the-nile?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD4"><img width="270" height="auto" class="fullWidth mobile-image  bnr-br-br-0 bnr-br-bl-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/de77155c6c2898ab6c5facd4238506af4de6311a3d9f0cd8bd237f63e61a0633.jpg" alt="" style="border-top-right-radius: 0px; border-top-left-radius: 0px; border-bottom-right-radius: 10px;"></a>
+<a href="https://holiday.saga.co.uk/holidays/africa/egypt/magic-of-the-nile?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD4"><img width="270" height="auto" class="fullWidth mobile-image  bnr-br-br-0 bnr-br-bl-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/de77155c6c2898ab6c5facd4238506af4de6311a3d9f0cd8bd237f63e61a0633.jpg" alt="" style="border-top-right-radius: 0px; border-top-left-radius: 0px; border-bottom-right-radius: 10px; display: none;"></a>
 </td>
 <!--<![endif]-->
 <!--[if mso]>
@@ -1302,7 +1318,7 @@ Book during our Winter Holiday Sale and enjoy savings of 10% or more off any esc
 <!--<![endif]-->
 <!--[if mso]>
 <td align="center" class="fullWidth">
-<a href="hhttps://holiday.saga.co.uk/holidays/europe/spain/canary-islands/tenerife/hotel-best-semiramis?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD6" target="_blank" _label="POD6"><img width="270" height="auto" class="fullWidth bnr-br-tr bnr-br-bl-0 bnr-br-br-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/36d57648052cd280fc6ca79cb9842bb28f9cf3a71ea50b376a86deaa8151bf34.jpg" alt="" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 10px;"></a>
+<a href="https://holiday.saga.co.uk/holidays/europe/spain/canary-islands/tenerife/hotel-best-semiramis?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD6" target="_blank" _label="POD6"><img width="270" height="auto" class="fullWidth bnr-br-tr bnr-br-bl-0 bnr-br-br-0" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/36d57648052cd280fc6ca79cb9842bb28f9cf3a71ea50b376a86deaa8151bf34.jpg" alt="" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 10px;"></a>
 </td>
 <![endif]-->
 </tr>
